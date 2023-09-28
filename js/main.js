@@ -265,7 +265,52 @@ $(function () {
               linkUrl: "https://wa.me/+9647517960618",
             },
           ],
-          prices: {},
+          prices: [
+            {
+              title: "Starter Price",
+              price: `FREE<sup>*</sup>`,
+              isPopular: false,
+              conditions: [
+                ["Ui Design", false],
+                ["Web Development", false],
+                ["Logo design", true],
+                ["SEO optimization", true],
+                ["Wordpress integration", true],
+              ],
+              linkUrl: "https://wa.me/+9647517960618",
+              note: `<div class="art-asterisk">
+              <sup>*</sup>Free only when ordering paid services
+              </div>`,
+            },
+            {
+              title: "Hourly payment",
+              price: `<span>$</span>15<span>h</span>`,
+              isPopular: true,
+              conditions: [
+                ["Ui Design", false],
+                ["Web Development", false],
+                ["Logo design", false],
+                ["SEO optimization", true],
+                ["Wordpress integration", true],
+              ],
+              linkUrl: "https://wa.me/+9647517960618",
+              note: null,
+            },
+            {
+              title: "Full time",
+              price: `<span>$</span>1500<span>m</span>`,
+              isPopular: false,
+              conditions: [
+                ["Ui Design", false],
+                ["Web Development", false],
+                ["Logo design", false],
+                ["SEO optimization", false],
+                ["Wordpress integration", false],
+              ],
+              linkUrl: "https://wa.me/+9647517960618",
+              note: null,
+            },
+          ],
           recommendattions: {},
         },
         gallery: {},
@@ -299,6 +344,9 @@ $(function () {
     ),
     portfolio_content_home_services = document.getElementById(
       "portfolio-content-home-services"
+    ),
+    portfolio_content_home_price = document.getElementById(
+      "portfolio-content-home-price"
     ),
     portfolio_menu = document.getElementById("portfolio-menu");
   // * Response Actions :
@@ -490,6 +538,42 @@ $(function () {
       </div>
     </div>
     `;
+  });
+  jQuery.each(portfolio.Content.home.prices, (index, item) => {
+    portfolio_content_home_price.innerHTML += `
+        <div class="col-lg-4">
+        <div class="art-a art-price ${
+          item.isPopular == true ? "art-popular-price" : ""
+        }">
+          <div class="art-price-body">
+            <h5 class="mb-30">${item.title}</h5>
+            <div class="art-price-cost">
+              <div class="art-number">${item.price}</div>
+            </div>
+            <ul class="price-list art-price-list">
+            </ul>
+            <a
+              href="${item.linkUrl}"
+              class="art-link art-color-link art-w-chevron"
+              >Order now</a
+            >
+            ${
+              item.note != null
+                ? `<div class="art-asterisk">
+            <sup>*</sup>Free only when ordering paid services
+          </div>`
+                : ""
+            }
+          </div>
+        </div>
+      </div>
+    `;
+    let list = document.querySelectorAll(".price-list");
+    jQuery.each(item.conditions, (i, c) => {
+      list[index].innerHTML += `<li class="${
+        c[1] == true ? "art-empty-item" : ""
+      }">${c[0]}</li>`;
+    });
   });
   // scrollbar
   Scrollbar.use(OverscrollPlugin);
