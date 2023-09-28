@@ -235,13 +235,13 @@ $(function () {
           ],
           services: [
             {
-              title: "Web Development",
-              description: `I offer you the safest, fastest, and best quality websites with a wide range of options that help you find your dream and start your business online.`,
+              title: "Mobile Applications Development",
+              description: `Turn your ideas into reality by building your own application, elevate your business to luxury and excellence, and make your services and sales easier, faster and on a larger scale. I will provide you with the appropriate solutions to achieve this.`,
               linkUrl: "https://wa.me/+9647517960618",
             },
             {
-              title: "Mobile Applications Development",
-              description: `Turn your ideas into reality by building your own application, elevate your business to luxury and excellence, and make your services and sales easier, faster and on a larger scale. I will provide you with the appropriate solutions to achieve this.`,
+              title: "Web Development",
+              description: `I offer you the safest, fastest, and best quality websites with a wide range of options that help you find your dream and start your business online.`,
               linkUrl: "https://wa.me/+9647517960618",
             },
             {
