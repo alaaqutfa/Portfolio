@@ -7,7 +7,7 @@ $(function () {
         Top: {
           Avatar: "img/face-1.png",
           Name: "Alaa Qutfa",
-          Post: `Software Engineer <br />Full-Stack Developer <br />Ui/UX Designer,<br />Graphic Designer,`,
+          Post: `Software Engineer`,
         },
         Scroll: {
           About: [
@@ -311,13 +311,111 @@ $(function () {
               note: null,
             },
           ],
-          recommendattions: {},
+          recommendations: [
+            {
+              imgPath: "img/testimonials/face-1.jpeg",
+              name: "Alex T Andrews",
+              description: "Our dear customer",
+              text: `Working with Alaa has been a pleasure.
+              Better yet - I alerted them of a minor issue
+              before going to sleep. The issue was fixed
+              the next morning. I couldn't ask for better
+              support. Thank you Alaa! This is easily a 5
+              star freelancer.`,
+              stars: 2,
+            },
+            {
+              imgPath: "img/testimonials/face-2.jpeg",
+              name: "Alex T Andrews",
+              description: "Our dear customer",
+              text: `Working with Alaa has been a pleasure.
+              Better yet - I alerted them of a minor issue
+              before going to sleep. The issue was fixed
+              the next morning. I couldn't ask for better
+              support. Thank you Alaa! This is easily a 5
+              star freelancer.`,
+              stars: 3,
+            },
+            {
+              imgPath: "img/testimonials/face-3.jpeg",
+              name: "Alex T Andrews",
+              description: "Our dear customer",
+              text: `Working with Alaa has been a pleasure.
+              Better yet - I alerted them of a minor issue
+              before going to sleep. The issue was fixed
+              the next morning. I couldn't ask for better
+              support. Thank you Alaa! This is easily a 5
+              star freelancer.`,
+              stars: 3,
+            },
+            {
+              imgPath: "img/testimonials/face-4.jpg",
+              name: "Alex T Andrews",
+              description: "Our dear customer",
+              text: `Working with Alaa has been a pleasure.
+              Better yet - I alerted them of a minor issue
+              before going to sleep. The issue was fixed
+              the next morning. I couldn't ask for better
+              support. Thank you Alaa! This is easily a 5
+              star freelancer.`,
+              stars: 3,
+            },
+            {
+              imgPath: "img/testimonials/face-5.jpg",
+              name: "Alex T Andrews",
+              description: "Our dear customer",
+              text: `Working with Alaa has been a pleasure.
+              Better yet - I alerted them of a minor issue
+              before going to sleep. The issue was fixed
+              the next morning. I couldn't ask for better
+              support. Thank you Alaa! This is easily a 5
+              star freelancer.`,
+              stars: 3,
+            },
+          ],
         },
-        gallery: {},
-        history: {},
-        contact: {},
+        gallery: {
+          filter_nav: [
+            ["*", "All Categories"],
+            [".web", "Web"],
+            [".applications", "Applications"],
+          ],
+          filter_list: [
+            {
+              type: "web",
+              imgPath: "files/Sites/0/Tyndale.png",
+              title: "Tyndale",
+              description: "",
+              templateUrl: "https://aqtemp.netlify.app",
+            },
+          ],
+        },
+        history: [
+          { title: "Education", data: [
+            {},
+          ] },
+          { title: "Work History", data: [] },
+        ],
+        contact: [
+          {
+            id: 1,
+            data: [
+              ["Country:", "Iraq", "l"],
+              ["City:", "Erbil", "l"],
+              ["Streat:", "Bakhtiari, Gulan St", "l"],
+            ],
+          },
+          {
+            id: 2,
+            data: [
+              ["Email:", "me@alaaqutfa.tech", "e"],
+              ["Whatsapp:", "+9647517960618", "w"],
+              ["Office:", "+9647511639769", "p"],
+            ],
+          },
+        ],
       },
-      Brand: {},
+      Brand: ["img/brands/1.png", "img/brands/2.png"],
       Copyright: ["https://wa.me/+9647517960618", "Alaa Qutfa"],
       Menu: ["Home", "Portfolio", "History", "Contact"],
       Preloader: {
@@ -348,6 +446,22 @@ $(function () {
     portfolio_content_home_price = document.getElementById(
       "portfolio-content-home-price"
     ),
+    portfolio_content_home_recommendations = document.getElementById(
+      "portfolio-Content-home-recommendations"
+    ),
+    portfolio_content_gallery_filter_nav = document.getElementById(
+      "portfolio-content-gallery-filter-nav"
+    ),
+    portfolio_content_gallery_filter_list = document.getElementById(
+      "portfolio-content-gallery-filter-list"
+    ),
+    portfolio_content_history = document.getElementById(
+      "portfolio-content-history"
+    ),
+    portfolio_content_contact = document.getElementById(
+      "portfolio-content-contact"
+    ),
+    portfolio_brands = document.getElementById("portfolio-brands"),
     portfolio_menu = document.getElementById("portfolio-menu");
   // * Response Actions :
   $("#portfolio-data-top").html(`
@@ -508,15 +622,15 @@ $(function () {
   jQuery.each(portfolio.Content.home.counters, (index, item) => {
     portfolio_content_home_counters.innerHTML += `
     <div class="col-md-3 col-6">
-                        <div class="art-counter-frame">
-                          <div class="art-counter-box">
-                            <span class="art-counter">${item[1]}</span
-                            ><span class="art-counter-plus">+</span>
-                          </div>
-                          <h6>${item[0]}</h6>
-                        </div>
-                      </div>
-                      `;
+      <div class="art-counter-frame">
+        <div class="art-counter-box">
+          <span class="art-counter">${item[1]}</span
+          ><span class="art-counter-plus">+</span>
+        </div>
+        <h6>${item[0]}</h6>
+      </div>
+    </div>
+    `;
   });
   jQuery.each(portfolio.Content.home.services, (index, item) => {
     portfolio_content_home_services.innerHTML += `
@@ -575,6 +689,146 @@ $(function () {
       }">${c[0]}</li>`;
     });
   });
+  jQuery.each(portfolio.Brand, (index, item) => {
+    portfolio_brands.innerHTML += `
+    <div class="col-6 col-lg-3">
+                      <img
+                        class="art-brand"
+                        src="${item}"
+                        alt="brand"
+                      />
+                    </div>`;
+  });
+  jQuery.each(portfolio.Content.home.recommendations, (index, item) => {
+    portfolio_content_home_recommendations.innerHTML += `
+    <div class="swiper-slide">
+      <div class="art-a art-testimonial">
+        <div class="testimonial-body">
+          <img
+            class="art-testimonial-face"
+            src="${item.imgPath}"
+            alt="face"
+          />
+          <h5>${item.name}</h5>
+          <div class="art-el-suptitle mb-15">
+          ${item.description}
+          </div>
+          <div class="mb-15">
+          ${item.text}
+          </div>
+        </div>
+        <div class="art-testimonial-footer">
+          <div class="art-left-side">
+            <ul class="rate-list art-star-rate"></ul>
+          </div>
+          <div class="art-right-side"></div>
+        </div>
+      </div>
+    </div>
+  `;
+    var rate_list = document.querySelectorAll(".rate-list");
+    for (var i = 0; i < item.stars; i++) {
+      rate_list[index].innerHTML += `<li><i class="fas fa-star"></i></li>`;
+    }
+    for (var i = 0; i < 5 - item.stars; i++) {
+      rate_list[
+        index
+      ].innerHTML += `<li class="art-empty-item"><i class="fas fa-star"></i></li>`;
+    }
+  });
+  jQuery.each(portfolio.Content.gallery.filter_nav, (index, item) => {
+    portfolio_content_gallery_filter_nav.innerHTML += `
+    <a
+      ${index == 0 ? `id="gallery-click-btn"` : ""}
+      data-filter="${item[0]}"
+      class="art-link ${index == 0 ? "art-current" : ""}"
+      style="cursor:pointer;"
+      >${item[1]}</a>
+    `;
+  });
+  jQuery.each(portfolio.Content.gallery.filter_list, (index, item) => {
+    portfolio_content_gallery_filter_list.innerHTML += `
+      <div class="art-grid-item ${item.type}">
+        <a
+          data-fancybox="gallery"
+          href="${item.imgPath}"
+          class="art-a art-portfolio-item-frame art-horizontal"
+        >
+          <img src="${item.imgPath}" alt="item" />
+          <span class="art-item-hover"
+            ><i class="fas fa-expand"></i
+          ></span>
+        </a>
+        
+        <div class="art-item-description">
+          <h5 class="mb-15">${item.title}</h5>
+          <p>${item.description}</p>
+          <a
+            href="${item.templateUrl}"
+            class="art-link art-color-link art-w-chevron"
+            target="_blank"
+            >Live View</a
+          >
+        </div>
+      </div>
+    `;
+  });
+  jQuery.each(portfolio.Content.history, (index, item) => {
+    portfolio_content_history.innerHTML += `
+    <div class="col-lg-6">
+      <div class="art-section-title">
+        <div class="art-title-frame">
+          <h4>${item.title}</h4>
+        </div>
+      </div>
+      <div class="art-timeline art-gallery history-timeline-portfolio"></div>
+    </div>
+    `;
+  });
+  jQuery.each(portfolio.Content.contact, (index, item) => {
+    var count = portfolio.Content.contact.length,
+      x = $("#portfolio-content-contact").parent().width(),
+      fullWidth = (x * 80) / 100,
+      width = fullWidth / count + "px";
+    portfolio_content_contact.innerHTML += `
+    <div class="art-a art-card" style="width:${width}">
+    <div class="art-table p-15-15">
+      <ul class="contact-list"></ul>
+    </div>
+  </div>`;
+    var contact_list = document.querySelectorAll(".contact-list");
+    jQuery.each(item.data, (i, cd) => {
+      var type;
+      if (cd[2] == "m") {
+        type = "mailto:" + cd[1];
+      } else if (cd[2] == "w") {
+        type = "https://wa.me/" + cd[1];
+      } else if (cd[2] == "p") {
+        type = "tel:" + cd[1];
+      }
+      if (cd[2] == "l") {
+        contact_list[index].innerHTML += `
+    <li style="cursor:pointer;">
+          <h6>${cd[0]}</h6>
+          <span
+            > <a>${cd[1]}</a></span
+          >
+        </li>
+    `;
+      } else {
+        contact_list[index].innerHTML += `
+    <li style="cursor:pointer;">
+          <h6>${cd[0]}</h6>
+          <span
+            ><a href="${type}"
+              >${cd[1]}</a
+            ></span
+          >
+        </li>
+    `;
+      }
+    });
+  });
   // scrollbar
   Scrollbar.use(OverscrollPlugin);
   Scrollbar.init(document.querySelector("#scrollbar"), {
@@ -587,7 +841,6 @@ $(function () {
     renderByPixel: true,
     continuousScrolling: true,
   });
-
   // page loading
   $(document).ready(function () {
     anime({
@@ -608,8 +861,9 @@ $(function () {
         $(".art-preloader").css("display", "none");
       },
     });
+    $(".route-content").addClass("d-none");
+    $(".route-content").first().removeClass("d-none");
   });
-
   var bar = new ProgressBar.Line(preloader, {
     strokeWidth: 1.7,
     easing: "easeInOut",
@@ -624,9 +878,7 @@ $(function () {
       bar.setText(Math.round(bar.value() * 100) + " %");
     },
   });
-
   bar.animate(1);
-
   // counters
   anime({
     targets: ".art-counter-frame",
@@ -635,7 +887,6 @@ $(function () {
     delay: 2300,
     easing: "linear",
   });
-
   anime({
     targets: ".art-counter",
     delay: 1300,
@@ -659,7 +910,6 @@ $(function () {
       });
     },
   });
-
   // progressbars
   var CircleBar = document.querySelectorAll(".Circle");
   jQuery.each(CircleBar, (index, item) => {
@@ -700,7 +950,6 @@ $(function () {
       });
     bar.animate(prog);
   });
-
   // Contact form
   $(".art-input").keyup(function () {
     if ($(this).val()) {
@@ -709,7 +958,6 @@ $(function () {
       $(this).removeClass("art-active");
     }
   });
-
   $("#form").submit(function () {
     $.ajax({
       type: "POST",
@@ -732,7 +980,6 @@ $(function () {
     });
     return false;
   });
-
   // portfolio filter
   $(".art-filter a").on("click", function () {
     $(".art-filter .art-current").removeClass("art-current");
@@ -743,14 +990,12 @@ $(function () {
     });
     return false;
   });
-
   // masonry Grid
   $(".art-grid").isotope({
     filter: "*",
     itemSelector: ".art-grid-item",
     transitionDuration: ".6s",
   });
-
   // slider testimonials
   var swiper = new Swiper(".art-testimonial-slider", {
     slidesPerView: 3,
@@ -778,7 +1023,6 @@ $(function () {
       },
     },
   });
-
   // slider works
   var swiper = new Swiper(".art-works-slider", {
     slidesPerView: 3,
@@ -808,7 +1052,6 @@ $(function () {
       },
     },
   });
-
   // slider blog
   var swiper = new Swiper(".art-blog-slider", {
     slidesPerView: 3,
@@ -838,63 +1081,51 @@ $(function () {
       },
     },
   });
-
   $('[data-fancybox="gallery"]').fancybox({
     animationEffect: "zoom-in-out",
     animationDuration: 600,
     transitionDuration: 1200,
     buttons: ["zoom", "share", "slideShow", "thumbs", "close"],
   });
-
   $('[data-fancybox="diplome"]').fancybox({
     animationEffect: "zoom-in-out",
     animationDuration: 600,
     transitionDuration: 1200,
     buttons: ["zoom", "slideShow", "thumbs", "close"],
   });
-
   $('[data-fancybox="avatar"]').fancybox({
     animationEffect: "zoom-in-out",
     animationDuration: 600,
     transitionDuration: 1200,
     buttons: ["zoom", "close"],
   });
-
   $('[data-fancybox="recommendation"]').fancybox({
     animationEffect: "zoom-in-out",
     animationDuration: 600,
     transitionDuration: 1200,
     buttons: ["zoom", "slideShow", "thumbs", "close"],
   });
-
   $.fancybox.defaults.hash = false;
-
   $(".current-menu-item a").clone().appendTo(".art-current-page");
-
   $(".art-map-overlay").on("click", function () {
     $(this).addClass("art-active");
   });
-
   $(".art-info-bar-btn").on("click", function () {
     $(".art-info-bar").toggleClass("art-active");
     $(".art-menu-bar-btn").toggleClass("art-disabled");
   });
-
   $(".art-menu-bar-btn").on("click", function () {
     $(".art-menu-bar-btn , .art-menu-bar").toggleClass("art-active");
     $(".art-info-bar-btn").toggleClass("art-disabled");
   });
-
   $(".art-info-bar-btn , .art-menu-bar-btn").on("click", function () {
     $(".art-content").toggleClass("art-active");
   });
-
   $(".art-curtain , .art-mobile-top-bar").on("click", function () {
     $(
       ".art-menu-bar-btn , .art-menu-bar , .art-info-bar , .art-content , .art-menu-bar-btn , .art-info-bar-btn"
     ).removeClass("art-active , art-disabled");
   });
-
   $(".menu-item").on("click", function () {
     if ($(this).hasClass("menu-item-has-children")) {
       $(this).children(".sub-menu").toggleClass("art-active");
@@ -904,7 +1135,6 @@ $(function () {
       ).removeClass("art-active , art-disabled");
     }
   });
-
   // reinit
   // document.addEventListener("swup:contentReplaced", function () {
   //   Scrollbar.use(OverscrollPlugin);
