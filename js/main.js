@@ -791,7 +791,7 @@ $(function () {
       fullWidth = (x * 80) / 100,
       width = fullWidth / count + "px";
     portfolio_content_contact.innerHTML += `
-    <div class="art-a art-card" style="width:${width}">
+    <div class="art-a art-card" style="width:${width}; min-width: 280px !important;">
     <div class="art-table p-15-15">
       <ul class="contact-list"></ul>
     </div>
