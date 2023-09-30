@@ -7,6 +7,24 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Alaa Qutfa - Portfolio" />
+    <meta property="og:type" content="Portfolio" />
+    <meta property="og:image" content="img/face-2.png" />
+    <meta property="og:url" content="https://alaaqutfa.tech" />
+    <meta name="twitter:card" content="img/thumbnail.png" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="A gallery of the work and CV of software engineer Alaa Qutfa."
+    />
+    <meta property="og:site_name" content="Alaa Qutfa - Portfolio" />
+    <meta name="twitter:image:alt" content="Eng. Alaa Qutfa" />
+
+    <!--  Non-Essential, But Required for Analytics -->
+    <meta property="fb:app_id" content="926380069199713" />
+    <meta name="twitter:site" content="@alaa_qutfa" />
     <!-- color of address bar in mobile browser -->
     <meta name="theme-color" content="#2B2B35" />
     <!-- favicon  -->
@@ -1228,7 +1246,31 @@
     <script src="js/plugins/swup.min.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
+    <!-- Facebook -->
+
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "926380069199713",
+          cookie: true,
+          xfbml: true,
+          version: "0.1",
+        });
+
+        FB.AppEvents.logPageView();
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
   </body>
 </html>
-
-

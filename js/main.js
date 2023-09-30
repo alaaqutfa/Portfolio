@@ -773,18 +773,19 @@ $(function () {
       </div>
     `;
   });
-  jQuery.each(portfolio.Content.history, (index, item) => {
-    portfolio_content_history.innerHTML += `
-    <div class="col-lg-6">
-      <div class="art-section-title">
-        <div class="art-title-frame">
-          <h4>${item.title}</h4>
-        </div>
-      </div>
-      <div class="art-timeline art-gallery history-timeline-portfolio"></div>
-    </div>
-    `;
-  });
+  //todo
+  // jQuery.each(portfolio.Content.history, (index, item) => {
+  //   portfolio_content_history.innerHTML += `
+  //   <div class="col-lg-6">
+  //     <div class="art-section-title">
+  //       <div class="art-title-frame">
+  //         <h4>${item.title}</h4>
+  //       </div>
+  //     </div>
+  //     <div class="art-timeline art-gallery history-timeline-portfolio"></div>
+  //   </div>
+  //   `;
+  // });
   jQuery.each(portfolio.Content.contact, (index, item) => {
     var count = portfolio.Content.contact.length,
       x = $("#portfolio-content-contact").parent().width(),
