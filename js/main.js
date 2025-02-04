@@ -3,644 +3,796 @@ $(function () {
   var currentYear = new Date().getFullYear();
   //* Languages :
   var portfolio_en = {
-      Data: {
-        Top: {
-          Avatar: "img/face-1.png",
-          Name: "Alaa Qutfa",
-          Post: `Software Engineer`,
-        },
-        Scroll: {
-          About: [
-            ["Age", currentYear - 2000],
-            ["Residence", "Iraq"],
-            ["City", "Erbil"],
-          ],
-          Languages: [
-            {
-              Id: "circleprog1",
-              Type: "Circle",
-              Name: "Arabic",
-              Progress: "p100",
-            },
-            {
-              Id: "circleprog2",
-              Type: "Circle",
-              Name: "English",
-              Progress: "p77",
-            },
-            {
-              Id: "circleprog3",
-              Type: "Circle",
-              Name: "Germany",
-              Progress: "p35",
-            },
-            {
-              Id: "circleprog4",
-              Type: "Circle",
-              Name: "Kurdish",
-              Progress: "p20",
-            },
-          ],
-          Skills: [
-            // Web Programming Languages :
-            {
-              Title: "Web Programming Languages :",
-              items: [
-                {
-                  id: "lineprog1",
-                  Type: "line",
-                  Name: "HTML5",
-                  Progress: "100",
-                },
-                {
-                  id: "lineprog2",
-                  Type: "line",
-                  Name: "CSS3",
-                  Progress: "100",
-                },
-                {
-                  id: "lineprog3",
-                  Type: "line",
-                  Name: "Bootstrap",
-                  Progress: "100",
-                },
-                {
-                  id: "lineprog4",
-                  Type: "line",
-                  Name: "Sass",
-                  Progress: "100",
-                },
-                { id: "lineprog5", Type: "line", Name: "JS", Progress: "100" },
-                {
-                  id: "lineprog6",
-                  Type: "line",
-                  Name: "Node js",
-                  Progress: "85",
-                },
-                {
-                  id: "lineprog7",
-                  Type: "line",
-                  Name: "React js",
-                  Progress: "70",
-                },
-                {
-                  id: "lineprog8",
-                  Type: "line",
-                  Name: "Jquery",
-                  Progress: "100",
-                },
-                { id: "lineprog9", Type: "line", Name: "PHP", Progress: "100" },
-              ],
-            },
-            // Mobile Applications Programming Languages :
-            {
-              Title: "Mobile Applications Programming Languages :",
-              items: [
-                {
-                  id: "lineprog10",
-                  Type: "line",
-                  Name: "Flutter & Dart",
-                  Progress: "95",
-                },
-                {
-                  id: "lineprog11",
-                  Type: "line",
-                  Name: "Java",
-                  Progress: "35",
-                },
-              ],
-            },
-            // UI/UX Programs :
-            {
-              Title: "UI/UX Programs :",
-              items: [
-                {
-                  id: "lineprog12",
-                  Type: "line",
-                  Name: "Adobe XD",
-                  Progress: "85",
-                },
-              ],
-            },
-            // Graphic Design Programs :
-            {
-              Title: "Graphic Design Programs :",
-              items: [
-                {
-                  id: "lineprog13",
-                  Type: "line",
-                  Name: "Adobe Photoshop",
-                  Progress: "85",
-                },
-                {
-                  id: "lineprog14",
-                  Type: "line",
-                  Name: "Adobe Illustrator",
-                  Progress: "85",
-                },
-              ],
-            },
-            // Video Editing Programs :
-            {
-              Title: "Video Editing Programs :",
-              items: [
-                {
-                  id: "lineprog15",
-                  Type: "line",
-                  Name: "Adobe Premiere Pro",
-                  Progress: "75",
-                },
-                {
-                  id: "lineprog16",
-                  Type: "line",
-                  Name: "Adobe After Effects",
-                  Progress: "65",
-                },
-              ],
-            },
-            // Sound Editing Programs :
-            {
-              Title: "Sound Editing Programs :",
-              items: [
-                {
-                  id: "lineprog17",
-                  Type: "line",
-                  Name: "Adobe Audition",
-                  Progress: "65",
-                },
-              ],
-            },
-          ],
-          Knowledges: [
-            "the ability to work long hours",
-            "Able to work under pressure",
-            "Team spirit and participation",
-            "Sharing scientific experiences",
-            "Commitment to deadlines with clients",
-            "Accuracy in work and attention to the opinion of the customer",
-            "Paying attention to the rules of academic design",
-            "Good visual nutrition",
-            "Accuracy in choosing harmonious colors",
-            "Creating corporate visual identities",
-            "continuous learning",
-            "Skills development",
-            "Keeping pace with development and modern designs",
-            "Tact in speaking and dealing with openness",
-            "OOP",
-            "Git & Github",
-          ],
-          CV: "files/Alaa_Qutfa.pdf",
-        },
-        Bottom: {
-          Whatsapp: [
-            "https://wa.me/+9647517960618",
-            `<i class="fa-brands fa-whatsapp"></i>`,
-          ],
-          Facebook: [
-            "https://www.facebook.com/aloosh2712000/",
-            `<i class="fa-brands fa-facebook"></i>`,
-          ],
-          Instagram: [
-            "https://www.instagram.com/alaaqutfa/",
-            `<i class="fa-brands fa-instagram"></i>`,
-          ],
-          Linkedin: [
-            "https://www.linkedin.com/in/alaa-qutfa-96a326256/",
-            `<i class="fa-brands fa-linkedin"></i>`,
-          ],
-        },
-      },
-      Content: {
-        home: {
-          banner: {
-            title: "Discover my Amazing <br />Art Space!",
-            startStaticPhrae: "&lt;<i>code</i>&gt; I build",
-            slidePhrases: `["web interfaces.", "ios and android applications."]`,
-            endStaticPhrae: "&lt;/<i>code</i>&gt;",
-            btnText: "Explore now",
-            btnLink: "",
-            linkText: "Hire me",
-            linkUrl: "https://mostaql.com/u/Aquarius_IT",
-            bgImgPath: "img/bg.jpg",
-            imgPath: "img/face-2.png",
-          },
-          counters: [
-            ["Years Experience", currentYear - 2015],
-            ["Completed Projects", 25],
-            ["Happy Customers", 65],
-            ["Honors and Awards", 13],
-          ],
-          services: [
-            {
-              title: "Mobile Applications Development",
-              description: `Turn your ideas into reality by building your own application, elevate your business to luxury and excellence, and make your services and sales easier, faster and on a larger scale. I will provide you with the appropriate solutions to achieve this.`,
-              linkUrl: "https://wa.me/+9647517960618",
-            },
-            {
-              title: "Web Development",
-              description: `I offer you the safest, fastest, and best quality websites with a wide range of options that help you find your dream and start your business online.`,
-              linkUrl: "https://wa.me/+9647517960618",
-            },
-            {
-              title: "Hosting",
-              description: `The best and fastest hosting with 24/7 support at special prices with unlimited extensions`,
-              linkUrl: "https://wa.me/+9647517960618",
-            },
-            {
-              title: "Cyber Security",
-              description: `Cybersecurity is a constantly changing concept with new threats emerging every day that threaten the security of your information and data from hackers. I offer you my services to protect your data and business and keep up with what is happening in cyberspace`,
-              linkUrl: "https://wa.me/+9647517960618",
-            },
-            {
-              title: "Marketing",
-              description: `I will help you develop a plan to make your product reach the largest number of customers and make your business accounts active on social media pages.`,
-              linkUrl: "https://wa.me/+9647517960618",
-            },
-            {
-              title: "Graphic Design",
-              description: `I will add artistic touches to your work to make it distinctive and shine among all similar works.`,
-              linkUrl: "https://wa.me/+9647517960618",
-            },
-          ],
-          prices: [
-            {
-              title: "Single",
-              price: `<span>$</span>8.3<span>mo</span>`,
-              isPopular: false,
-              conditions: [
-                ["Standard Performance", false],
-                ["1 Website", false],
-                ["50 GB SSD Storage", false],
-                ["Weekly Backups", false],
-                ["1 Email Account", false],
-                ["Unlimited Free SSL", false],
-                ["Unlimited Bandwidth", false],
-                ["24/7 Customer Support", false],
-                ["Free CDN", true],
-                ["Dedicated IP Address", true],
-              ],
-              linkUrl: "https://wa.me/+9647517960618",
-              note: null,
-            },
-            {
-              title: "Premium",
-              price: `<span>$</span>12.5<span>mo</span>`,
-              isPopular: true,
-              conditions: [
-                ["Standard Performance", false],
-                ["100 Website", false],
-                ["100 GB SSD Storage", false],
-                ["Weekly Backups", false],
-                ["Free Email", false],
-                ["Unlimited Free SSL", false],
-                ["Unlimited Bandwidth", false],
-                ["24/7 Customer Support", false],
-                ["Free CDN", true],
-                ["Dedicated IP Address", true],
-              ],
-              linkUrl: "https://wa.me/+9647517960618",
-              note: null,
-            },
-            {
-              title: "Business",
-              price: `<span>$</span>16.6<span>mo</span>`,
-              isPopular: false,
-              conditions: [
-                ["Increased Performance", false],
-                ["100 Website", false],
-                ["200 GB SSD Storage", false],
-                ["Daily Backups", false],
-                ["Free Email", false],
-                ["Unlimited Free SSL", false],
-                ["Unlimited Bandwidth", false],
-                ["24/7 Customer Support", false],
-                ["Free CDN", false],
-                ["Dedicated IP Address", true],
-              ],
-              linkUrl: "https://wa.me/+9647517960618",
-              note: null,
-            },
-            {
-              title: "Ultimate Plan",
-              price: `<span>$</span>26.6<span>mo</span>`,
-              isPopular: false,
-              conditions: [
-                ["Maximum Performance", false],
-                ["300 Website", false],
-                ["200 GB SSD Storage", false],
-                ["Daily Backups", false],
-                ["Free Email", false],
-                ["Unlimited Free SSL", false],
-                ["Unlimited Bandwidth", false],
-                ["24/7 Customer Support", false],
-                ["Free CDN", false],
-                ["Dedicated IP Address", false],
-              ],
-              linkUrl: "https://wa.me/+9647517960618",
-              note: null,
-            },
-          ],
-          recommendations: [
-            {
-              imgPath: "img/testimonials/face-1.jpeg",
-              name: "Alex T Andrews",
-              description: "Our dear customer",
-              text: `Working with Alaa has been a pleasure.
-            Better yet - I alerted them of a minor issue
-            before going to sleep. The issue was fixed
-            the next morning. I couldn't ask for better
-            support. Thank you Alaa! This is easily a 5
-            star freelancer.`,
-              stars: 2,
-            },
-            {
-              imgPath: "img/testimonials/face-2.jpeg",
-              name: "Alex T Andrews",
-              description: "Our dear customer",
-              text: `Working with Alaa has been a pleasure.
-            Better yet - I alerted them of a minor issue
-            before going to sleep. The issue was fixed
-            the next morning. I couldn't ask for better
-            support. Thank you Alaa! This is easily a 5
-            star freelancer.`,
-              stars: 3,
-            },
-            {
-              imgPath: "img/testimonials/face-3.jpeg",
-              name: "Alex T Andrews",
-              description: "Our dear customer",
-              text: `Working with Alaa has been a pleasure.
-            Better yet - I alerted them of a minor issue
-            before going to sleep. The issue was fixed
-            the next morning. I couldn't ask for better
-            support. Thank you Alaa! This is easily a 5
-            star freelancer.`,
-              stars: 3,
-            },
-            {
-              imgPath: "img/testimonials/face-4.jpg",
-              name: "Alex T Andrews",
-              description: "Our dear customer",
-              text: `Working with Alaa has been a pleasure.
-            Better yet - I alerted them of a minor issue
-            before going to sleep. The issue was fixed
-            the next morning. I couldn't ask for better
-            support. Thank you Alaa! This is easily a 5
-            star freelancer.`,
-              stars: 3,
-            },
-            {
-              imgPath: "img/testimonials/face-5.jpg",
-              name: "Alex T Andrews",
-              description: "Our dear customer",
-              text: `Working with Alaa has been a pleasure.
-            Better yet - I alerted them of a minor issue
-            before going to sleep. The issue was fixed
-            the next morning. I couldn't ask for better
-            support. Thank you Alaa! This is easily a 5
-            star freelancer.`,
-              stars: 3,
-            },
-          ],
-        },
-        gallery: {
-          filter_nav: [
-            ["*", "All Categories"],
-            [".web", "Websites"],
-            [".applications", "Applications"],
-          ],
-          filter_list: [
-            {
-              type: "web",
-              imgPath: "files/Sites/0/Tyndale.png",
-              title: "Tyndale",
-              description: "",
-              templateUrl: "https://aqtemp.netlify.app",
-            },
-          ],
-        },
-        history: [
-          {
-            title: "Education",
-            data: [
-              {
-                box: "diplome",
-                type: "Diplome",
-                src: "Al Wataniya Private University",
-                title: "Student",
-                date: "jan 2020 - may 2022",
-                description: "Informatics engineering student",
-                linkPath: "files/university life en.jpg",
-                havePopup: false,
-                popup: null,
-              },
-              {
-                box: "diplome",
-                type: "Bacalorious",
-                src: "Mohsen Abbas School",
-                title: "Student",
-                date: "jan 2016 - may 2019",
-                description: `Scientific study student in the Syrian Arab Republicans`,
-                linkPath: "files/bacalorious en.jpg",
-                havePopup: false,
-                popup: null,
-              },
-              {
-                box: "diplome",
-                type: "Certificate",
-                src: "Shiyar Academy",
-                title: "HTML Diploma",
-                date: "march 2022",
-                description: `A course to learn to build and write the structure of websites`,
-                linkPath: "files/diploma-HTMLCoderShiyar.pdf",
-                havePopup: false,
-                popup: null,
-              },
-              {
-                box: "diplome",
-                type: "Certificate",
-                src: "Shiyar Academy",
-                title: "CSS Diploma",
-                date: "march 2022",
-                description: `A course to learn the design and coordination of websites`,
-                linkPath: "files/diploma-CSSCoderShiyar.pdf",
-                havePopup: false,
-                popup: null,
-              },
-              {
-                box: "diplome",
-                type: "Certificate",
-                src: "Shiyar Academy",
-                title: "Bootstrap Diploma",
-                date: "march 2022",
-                description: `A course to learn designing and formatting websites using bootstrap`,
-                linkPath: "files/diploma-BootstrapCoderShiyar.pdf",
-                havePopup: false,
-                popup: null,
-              },
-              {
-                box: "diplome",
-                type: "Certificate",
-                src: "Shiyar Academy",
-                title: "JavaScript Diploma",
-                date: "April 2022",
-                description: `A course to learn the java script language and deal with json and API files`,
-                linkPath: "files/diploma-JavaScriptCoderShiyar.pdf",
-                havePopup: false,
-                popup: null,
-              },
-              {
-                box: "diplome",
-                type: "Certificate",
-                src: "Shiyar Academy",
-                title: "PHP Diploma",
-                date: "April 2022",
-                description: `A course to learn the php language and deal with json files, API and databases to create integrated sites, login systems and Ecommerce`,
-                linkPath: "files/diploma-PHPCoderShiyar.pdf",
-                havePopup: false,
-                popup: null,
-              },
-              {
-                box: "diplome",
-                type: "Certificate",
-                src: "Shiyar Academy",
-                title: "SQL/MySQL Diploma",
-                date: "April 2022",
-                description: `A course to learn SQL / mysql and deal with databases`,
-                linkPath: "files/diploma-SQL MySQLCoderShiyar.pdf",
-                havePopup: false,
-                popup: null,
-              },
-              {
-                box: "diplome",
-                type: "Certificate",
-                src: "Shiyar Academy",
-                title: "JAVA Diploma",
-                date: "April 2022",
-                description: `A course to learn the design and coordination of
-              Android applications using java and android
-              studio`,
-                linkPath: "files/diploma-javaCoderShiyar.pdf",
-                havePopup: false,
-                popup: null,
-              },
-            ],
-          },
-          {
-            title: "Work History",
-            data: [
-              // {
-              //   box: "recommendation",
-              //   type: "Special work",
-              //   src: "Graphic & Web Designer",
-              //   title: "Student",
-              //   date: "april 2018 - Until now",
-              //   description: "Design advertising posters and personal websites",
-              //   linkPath: "files/university life en.jpg",
-              //   havePopup: true,
-              //   popup: {
-              //     imgPath: "img/testimonials/face-1.jpeg",
-              //     name: "Alex T Andrews",
-              //     title: "Our dear customer",
-              //     description: `Working with Alaa has been a pleasure.
-              // Better yet - I alerted them of a minor issue
-              // before going to sleep. The issue was fixed
-              // the next morning. I couldn't ask for better
-              // support. Thank you Alaa! This is easily a 5
-              // star freelancer.`,
-              //     stars: 3,
-              //   },
-              // },
-              {
-                box: "recommendation",
-                type: "Information",
-                src: "Software Engineer",
-                title: "Special work",
-                date: "April 2018 - Until now",
-                description: `Special work - extensive experience in building and developing systems, developing and designing user interfaces for both phone applications and websites, in addition to building, developing and securing databases of all kinds.`,
-                linkPath: "https://wa.me/+9647517960618",
-                havePopup: false,
-                popup: {},
-              },
-              {
-                box: "recommendation",
-                type: "View Website",
-                src: "ART-TECH / Full Time",
-                title: "Production Manager",
-                date: "DEC 2022 - Until now",
-                description: `Production manager at Art Tech Company, which specializes in printing and decoration.`,
-                linkPath: "https://art-techiq.com",
-                havePopup: false,
-                popup: {},
-              },
-              {
-                box: "recommendation",
-                type: "View Website",
-                src: "Moustaql / Remotely",
-                title: "Full Stack Developer",
-                date: "DEC 2021 - Until now",
-                description: `Programming services (websites, Android and iPhone applications, systems)`,
-                linkPath: "https://mostaql.com/u/Aquarius_IT",
-                havePopup: false,
-                popup: {},
-              },
-              {
-                box: "recommendation",
-                type: "View Website",
-                src: "Khamsat / Remotely",
-                title: "Graphic designer",
-                date: "DEC 2021 - Until now",
-                description: `Design services (logos, visual identity, social media, marketing)`,
-                linkPath: "https://khamsat.com/user/aquarius_it",
-                havePopup: false,
-                popup: {},
-              },
-              {
-                box: "recommendation",
-                type: "View Facebook Page",
-                src: "Al-Zahraa Press / Full Time",
-                title: "Graphic designer",
-                date: "Jan 2019 - Jan 2020",
-                description: `Design advertising posters`,
-                linkPath: "https://www.facebook.com/alzahra511/",
-                havePopup: false,
-                popup: {},
-              },
-            ],
-          },
-        ],
-        contact: [
-          {
-            id: 1,
-            data: [
-              ["Country:", "Iraq", "l"],
-              ["City:", "Erbil", "l"],
-              ["Streat:", "Bakhtiari, Gulan St", "l"],
-            ],
-          },
-          {
-            id: 2,
-            data: [
-              ["Email:", "me@alaaqutfa.tech", "e"],
-              ["Whatsapp:", "+9647517960618", "w"],
-              ["Office:", "+9647511639769", "p"],
-            ],
-          },
-        ],
-      },
-      Brand: ["img/brands/1.png", "img/brands/2.png"],
-      Copyright: ["https://wa.me/+9647517960618", "Alaa Qutfa"],
-      Menu: ["Home", "Portfolio", "History", "Contact"],
-      Language: [
-        ["EN", true, "en"],
-        ["AR", false, "ar"],
-      ],
-      Preloader: {
-        id: "preloader",
+    Data: {
+      Top: {
+        Avatar: "img/face-1.png",
         Name: "Alaa Qutfa",
-        JobTitle: "Software Engineer",
+        Post: `Software Engineer`,
+      },
+      Scroll: {
+        About: [
+          ["Age", currentYear - 2001],
+          ["Residence", "Syria"],
+          ["City", "Homs"],
+        ],
+        Languages: [
+          {
+            Id: "circleprog1",
+            Type: "Circle",
+            Name: "Arabic",
+            Progress: "p100",
+          },
+          {
+            Id: "circleprog2",
+            Type: "Circle",
+            Name: "English",
+            Progress: "p80",
+          },
+          {
+            Id: "circleprog3",
+            Type: "Circle",
+            Name: "Germany",
+            Progress: "p35",
+          },
+          {
+            Id: "circleprog4",
+            Type: "Circle",
+            Name: "Kurdish",
+            Progress: "p20",
+          },
+        ],
+        Skills: [
+          // Web Programming Languages :
+          {
+            Title: "Programming Languages :",
+            items: [
+              { id: "lineprog5", Type: "line", Name: "JavaScript (ES6+)", Progress: "100" },
+              { id: "lineprog9", Type: "line", Name: "PHP", Progress: "100" },
+              { id: "lineprog18", Type: "line", Name: "Python", Progress: "100" },
+              {
+                id: "lineprog11",
+                Type: "line",
+                Name: "Java",
+                Progress: "85",
+              },
+              {
+                id: "lineprog10",
+                Type: "line",
+                Name: "Dart",
+                Progress: "100",
+              },
+            ],
+          },
+          // Front-End Technologies :
+          {
+            Title: "Front-End Technologies :",
+            items: [
+              {
+                id: "lineprog1",
+                Type: "line",
+                Name: "HTML5",
+                Progress: "100",
+              },
+              {
+                id: "lineprog2",
+                Type: "line",
+                Name: "CSS3",
+                Progress: "100",
+              },
+              {
+                id: "lineprog3",
+                Type: "line",
+                Name: "Tailwindcss",
+                Progress: "100",
+              },
+              {
+                id: "lineprog3",
+                Type: "line",
+                Name: "Bootstrap",
+                Progress: "100",
+              },
+              {
+                id: "lineprog4",
+                Type: "line",
+                Name: "Sass",
+                Progress: "100",
+              },
+              {
+                id: "lineprog7",
+                Type: "line",
+                Name: "Vue js",
+                Progress: "90",
+              },
+              {
+                id: "lineprog7",
+                Type: "line",
+                Name: "React js",
+                Progress: "90",
+              },
+              {
+                id: "lineprog8",
+                Type: "line",
+                Name: "Jquery",
+                Progress: "100",
+              },
+            ],
+          },
+          // Back-End Technologies :
+          {
+            Title: "Back-End Technologies :",
+            items: [
+              {
+                id: "lineprog21",
+                Type: "line",
+                Name: "Laravel",
+                Progress: "100",
+              },
+              {
+                id: "lineprog6",
+                Type: "line",
+                Name: "Node.js",
+                Progress: "100",
+              },
+              {
+                id: "lineprog22",
+                Type: "line",
+                Name: "Express.js",
+                Progress: "100",
+              },
+            ],
+          },
+          // Databases :
+          {
+            Title: "Databases :",
+            items: [
+              {
+                id: "lineprog19",
+                Type: "line",
+                Name: "SQL/MySQL",
+                Progress: "100",
+              },
+              {
+                id: "lineprog20",
+                Type: "line",
+                Name: "MongoDB",
+                Progress: "100",
+              },
+            ],
+          },
+          // Mobile Development :
+          {
+            Title: "Mobile Development :",
+            items: [
+              {
+                id: "lineprog23",
+                Type: "line",
+                Name: "Flutter",
+                Progress: "100",
+              },
+              {
+                id: "lineprog24",
+                Type: "line",
+                Name: "GetX",
+                Progress: "100",
+              },
+            ],
+          },
+          // Version Control :
+          {
+            Title: "Version Control :",
+            items: [
+              {
+                id: "lineprog25",
+                Type: "line",
+                Name: "Git",
+                Progress: "100",
+              },
+              {
+                id: "lineprog26",
+                Type: "line",
+                Name: "GitHub",
+                Progress: "100",
+              },
+              {
+                id: "lineprog27",
+                Type: "line",
+                Name: "Azure",
+                Progress: "100",
+              },
+            ],
+          },
+          // Tools & Platforms :
+          {
+            Title: "Tools & Platforms :",
+            items: [
+              {
+                id: "lineprog28",
+                Type: "line",
+                Name: "Docker",
+                Progress: "100",
+              },
+              {
+                id: "lineprog29",
+                Type: "line",
+                Name: "Nginx",
+                Progress: "100",
+              },
+              {
+                id: "lineprog30",
+                Type: "line",
+                Name: "RESTful APIs",
+                Progress: "100",
+              },
+            ],
+          },
+          // UI/UX Programs :
+          {
+            Title: "UI/UX Programs :",
+            items: [
+              {
+                id: "lineprog12",
+                Type: "line",
+                Name: "Figma",
+                Progress: "90",
+              },
+              {
+                id: "lineprog12",
+                Type: "line",
+                Name: "Adobe XD",
+                Progress: "100",
+              },
+            ],
+          },
+          // Graphic Design Programs :
+          {
+            Title: "Graphic Design Programs :",
+            items: [
+              {
+                id: "lineprog13",
+                Type: "line",
+                Name: "Adobe Photoshop",
+                Progress: "100",
+              },
+              {
+                id: "lineprog14",
+                Type: "line",
+                Name: "Adobe Illustrator",
+                Progress: "100",
+              },
+            ],
+          },
+          // Video Editing Programs :
+          {
+            Title: "Video Editing Programs :",
+            items: [
+              {
+                id: "lineprog15",
+                Type: "line",
+                Name: "Adobe Premiere Pro",
+                Progress: "90",
+              },
+              {
+                id: "lineprog16",
+                Type: "line",
+                Name: "Adobe After Effects",
+                Progress: "80",
+              },
+            ],
+          },
+          // Sound Editing Programs :
+          {
+            Title: "Sound Editing Programs :",
+            items: [
+              {
+                id: "lineprog17",
+                Type: "line",
+                Name: "Adobe Audition",
+                Progress: "70",
+              },
+            ],
+          },
+        ],
+        Knowledges: [
+          "the ability to work long hours",
+          "Able to work under pressure",
+          "Team spirit and participation",
+          "Sharing scientific experiences",
+          "Commitment to deadlines with clients",
+          "Accuracy in work and attention to the opinion of the customer",
+          "Paying attention to the rules of academic design",
+          "Good visual nutrition",
+          "Accuracy in choosing harmonious colors",
+          "Creating corporate visual identities",
+          "continuous learning",
+          "Skills development",
+          "Keeping pace with development and modern designs",
+          "Tact in speaking and dealing with openness",
+          "OOP",
+          "Git & Github",
+        ],
+        CV: "files/alaaqutfa.pdf",
+      },
+      Bottom: {
+        Whatsapp: [
+          "https://wa.me/+963986223268",
+          `<i class="fa-brands fa-whatsapp"></i>`,
+        ],
+        Facebook: [
+          "https://www.facebook.com/alaaqutfa.tech",
+          `<i class="fa-brands fa-facebook"></i>`,
+        ],
+        Instagram: [
+          "https://www.instagram.com/alaaqutfa.tech",
+          `<i class="fa-brands fa-instagram"></i>`,
+        ],
+        Linkedin: [
+          "https://www.linkedin.com/in/alaaqutfa",
+          `<i class="fa-brands fa-linkedin"></i>`,
+        ],
       },
     },
+    Content: {
+      home: {
+        banner: {
+          title: "Discover my Amazing <br />Art Space!",
+          startStaticPhrae: "&lt;<i>code</i>&gt; I build",
+          slidePhrases: `["web interfaces.", "ios and android applications.","ERP System", "CRM System"]`,
+          endStaticPhrae: "&lt;/<i>code</i>&gt;",
+          btnText: "Explore now",
+          btnLink: "",
+          linkText: "Let's work together",
+          linkUrl: "https://mostaql.com/u/Aquarius_IT",
+          bgImgPath: "img/bg.jpg",
+          imgPath: "img/face-2.png",
+        },
+        counters: [
+          ["Years Experience", currentYear - 2019],
+          ["Completed Projects", 12],
+          ["Happy Customers", 12],
+          ["Honors and Awards", 8],
+        ],
+        services: [
+          {
+            title: "Mobile Applications Development",
+            description: `Turn your ideas into reality by building your own application, elevate your business to luxury and excellence, and make your services and sales easier, faster and on a larger scale. I will provide you with the appropriate solutions to achieve this.`,
+            linkUrl: "https://wa.me/+963986223268",
+          },
+          {
+            title: "Web Development",
+            description: `I offer you the safest, fastest, and best quality websites with a wide range of options that help you find your dream and start your business online.`,
+            linkUrl: "https://wa.me/+963986223268",
+          },
+          {
+            title: "Hosting",
+            description: `The best and fastest hosting with 24/7 support at special prices with unlimited extensions`,
+            linkUrl: "https://wa.me/+963986223268",
+          },
+          {
+            title: "Cyber Security",
+            description: `Cybersecurity is a constantly changing concept with new threats emerging every day that threaten the security of your information and data from hackers. I offer you my services to protect your data and business and keep up with what is happening in cyberspace`,
+            linkUrl: "https://wa.me/+963986223268",
+          },
+          {
+            title: "Marketing",
+            description: `I will help you develop a plan to make your product reach the largest number of customers and make your business accounts active on social media pages.`,
+            linkUrl: "https://wa.me/+963986223268",
+          },
+          {
+            title: "Graphic Design",
+            description: `I will add artistic touches to your work to make it distinctive and shine among all similar works.`,
+            linkUrl: "https://wa.me/+963986223268",
+          },
+        ],
+        prices: [
+          {
+            title: "Single",
+            price: `<span>$</span>8.3<span>mo</span>`,
+            isPopular: false,
+            conditions: [
+              ["Standard Performance", false],
+              ["1 Website", false],
+              ["50 GB SSD Storage", false],
+              ["Weekly Backups", false],
+              ["1 Email Account", false],
+              ["Unlimited Free SSL", false],
+              ["Unlimited Bandwidth", false],
+              ["24/7 Customer Support", false],
+              ["Free CDN", true],
+              ["Dedicated IP Address", true],
+            ],
+            linkUrl: "https://wa.me/+963986223268",
+            note: null,
+          },
+          {
+            title: "Premium",
+            price: `<span>$</span>12.5<span>mo</span>`,
+            isPopular: true,
+            conditions: [
+              ["Standard Performance", false],
+              ["100 Website", false],
+              ["100 GB SSD Storage", false],
+              ["Weekly Backups", false],
+              ["Free Email", false],
+              ["Unlimited Free SSL", false],
+              ["Unlimited Bandwidth", false],
+              ["24/7 Customer Support", false],
+              ["Free CDN", true],
+              ["Dedicated IP Address", true],
+            ],
+            linkUrl: "https://wa.me/+963986223268",
+            note: null,
+          },
+          {
+            title: "Business",
+            price: `<span>$</span>16.6<span>mo</span>`,
+            isPopular: false,
+            conditions: [
+              ["Increased Performance", false],
+              ["100 Website", false],
+              ["200 GB SSD Storage", false],
+              ["Daily Backups", false],
+              ["Free Email", false],
+              ["Unlimited Free SSL", false],
+              ["Unlimited Bandwidth", false],
+              ["24/7 Customer Support", false],
+              ["Free CDN", false],
+              ["Dedicated IP Address", true],
+            ],
+            linkUrl: "https://wa.me/+963986223268",
+            note: null,
+          },
+          {
+            title: "Ultimate Plan",
+            price: `<span>$</span>26.6<span>mo</span>`,
+            isPopular: false,
+            conditions: [
+              ["Maximum Performance", false],
+              ["300 Website", false],
+              ["200 GB SSD Storage", false],
+              ["Daily Backups", false],
+              ["Free Email", false],
+              ["Unlimited Free SSL", false],
+              ["Unlimited Bandwidth", false],
+              ["24/7 Customer Support", false],
+              ["Free CDN", false],
+              ["Dedicated IP Address", false],
+            ],
+            linkUrl: "https://wa.me/+963986223268",
+            note: null,
+          },
+        ],
+        recommendations: [
+          {
+            imgPath: "img/testimonials/face-1.jpeg",
+            name: "Alex T Andrews",
+            description: "Our dear customer",
+            text: `Working with Alaa has been a pleasure.
+            Better yet - I alerted them of a minor issue
+            before going to sleep. The issue was fixed
+            the next morning. I couldn't ask for better
+            support. Thank you Alaa! This is easily a 5
+            star freelancer.`,
+            stars: 2,
+          },
+          {
+            imgPath: "img/testimonials/face-2.jpeg",
+            name: "Alex T Andrews",
+            description: "Our dear customer",
+            text: `Working with Alaa has been a pleasure.
+            Better yet - I alerted them of a minor issue
+            before going to sleep. The issue was fixed
+            the next morning. I couldn't ask for better
+            support. Thank you Alaa! This is easily a 5
+            star freelancer.`,
+            stars: 3,
+          },
+          {
+            imgPath: "img/testimonials/face-3.jpeg",
+            name: "Alex T Andrews",
+            description: "Our dear customer",
+            text: `Working with Alaa has been a pleasure.
+            Better yet - I alerted them of a minor issue
+            before going to sleep. The issue was fixed
+            the next morning. I couldn't ask for better
+            support. Thank you Alaa! This is easily a 5
+            star freelancer.`,
+            stars: 3,
+          },
+          {
+            imgPath: "img/testimonials/face-4.jpg",
+            name: "Alex T Andrews",
+            description: "Our dear customer",
+            text: `Working with Alaa has been a pleasure.
+            Better yet - I alerted them of a minor issue
+            before going to sleep. The issue was fixed
+            the next morning. I couldn't ask for better
+            support. Thank you Alaa! This is easily a 5
+            star freelancer.`,
+            stars: 3,
+          },
+          {
+            imgPath: "img/testimonials/face-5.jpg",
+            name: "Alex T Andrews",
+            description: "Our dear customer",
+            text: `Working with Alaa has been a pleasure.
+            Better yet - I alerted them of a minor issue
+            before going to sleep. The issue was fixed
+            the next morning. I couldn't ask for better
+            support. Thank you Alaa! This is easily a 5
+            star freelancer.`,
+            stars: 3,
+          },
+        ],
+      },
+      gallery: {
+        filter_nav: [
+          ["*", "All Categories"],
+          [".web", "Websites"],
+          [".applications", "Applications"],
+        ],
+        filter_list: [
+          {
+            type: "web",
+            imgPath: "img/gallery/Aljazeera-mockup.png",
+            title: "Aljazeera Machinary",
+            description: "Al Jazeera Machinery was established in 1995 and since then it has successfully been a supplier of printing equipment and printing services, which also includes importing and marketing raw materials, counselling and training of technical staffs. In order to accommodate a bigger selection of presses and servicing a larger area, Al Jazeera Machinery now has two branches located in (Baghdad & Erbil / Iraq).",
+            templateUrl: "https://aljazeeramachinery.netlify.app/",
+            hBG: [true, "#fff"],
+          },
+          {
+            type: "web",
+            imgPath: "img/gallery/world-gate.png",
+            title: "World Gate - Medical",
+            description: "world gate medical and lab supply company has powerful technical force made up of aggressive, dedicated service engineers to take care of service and After Sales Service of medical equipment's in field of dermatology and cosmetic (Alex hair removal machines & diode laser, IPL) and all type of medical equipment's in all over IRAQ - Kurdistan region. World gate medical and lab Supply was found in the middle of the year 2009 which identified a market need for the high quality of medical equipment in field of dermatology and cosmetic in Iraq - Kurdistan Region at affordable prices.",
+            templateUrl: "https://worldgate-medical.netlify.app/",
+            hBG: [true, "#fff"],
+          },
+        ],
+      },
+      history: [
+        {
+          title: "Education",
+          data: [
+            {
+              box: "diplome",
+              type: "Certificate of Experience",
+              src: "Alofuk Academy Malaysia",
+              title: "Software Engineer",
+              date: "DEC 2023",
+              description: "Software Engineer student",
+              linkPath: "files/alofuk.jpg",
+              havePopup: false,
+              popup: null,
+            },
+            {
+              box: "diplome",
+              type: "Diplome",
+              src: "Al Wataniya Private University",
+              title: "Student",
+              date: "jan 2020 - may 2022",
+              description: "Informatics engineering student",
+              linkPath: "files/university life en.jpg",
+              havePopup: false,
+              popup: null,
+            },
+            {
+              box: "diplome",
+              type: "Bacalorious",
+              src: "Mohsen Abbas School",
+              title: "Student",
+              date: "jan 2016 - may 2019",
+              description: `Scientific study student in the Syrian Arab Republicans`,
+              linkPath: "files/bacalorious en.jpg",
+              havePopup: false,
+              popup: null,
+            },
+            {
+              box: "diplome",
+              type: "Certificate",
+              src: "Shiyar Academy",
+              title: "HTML Diploma",
+              date: "march 2022",
+              description: `A course to learn to build and write the structure of websites`,
+              linkPath: "files/diploma-HTMLCoderShiyar.pdf",
+              havePopup: false,
+              popup: null,
+            },
+            {
+              box: "diplome",
+              type: "Certificate",
+              src: "Shiyar Academy",
+              title: "CSS Diploma",
+              date: "march 2022",
+              description: `A course to learn the design and coordination of websites`,
+              linkPath: "files/diploma-CSSCoderShiyar.pdf",
+              havePopup: false,
+              popup: null,
+            },
+            {
+              box: "diplome",
+              type: "Certificate",
+              src: "Shiyar Academy",
+              title: "Bootstrap Diploma",
+              date: "march 2022",
+              description: `A course to learn designing and formatting websites using bootstrap`,
+              linkPath: "files/diploma-BootstrapCoderShiyar.pdf",
+              havePopup: false,
+              popup: null,
+            },
+            {
+              box: "diplome",
+              type: "Certificate",
+              src: "Shiyar Academy",
+              title: "JavaScript Diploma",
+              date: "April 2022",
+              description: `A course to learn the java script language and deal with json and API files`,
+              linkPath: "files/diploma-JavaScriptCoderShiyar.pdf",
+              havePopup: false,
+              popup: null,
+            },
+            {
+              box: "diplome",
+              type: "Certificate",
+              src: "Shiyar Academy",
+              title: "PHP Diploma",
+              date: "April 2022",
+              description: `A course to learn the php language and deal with json files, API and databases to create integrated sites, login systems and Ecommerce`,
+              linkPath: "files/diploma-PHPCoderShiyar.pdf",
+              havePopup: false,
+              popup: null,
+            },
+            {
+              box: "diplome",
+              type: "Certificate",
+              src: "Shiyar Academy",
+              title: "SQL/MySQL Diploma",
+              date: "April 2022",
+              description: `A course to learn SQL / mysql and deal with databases`,
+              linkPath: "files/diploma-SQL MySQLCoderShiyar.pdf",
+              havePopup: false,
+              popup: null,
+            },
+            {
+              box: "diplome",
+              type: "Certificate",
+              src: "Shiyar Academy",
+              title: "JAVA Diploma",
+              date: "April 2022",
+              description: `A course to learn the design and coordination of
+              Android applications using java and android
+              studio`,
+              linkPath: "files/diploma-javaCoderShiyar.pdf",
+              havePopup: false,
+              popup: null,
+            },
+          ],
+        },
+        {
+          title: "Work History",
+          data: [
+            // {
+            //   box: "recommendation",
+            //   type: "Special work",
+            //   src: "Graphic & Web Designer",
+            //   title: "Student",
+            //   date: "april 2018 - Until now",
+            //   description: "Design advertising posters and personal websites",
+            //   linkPath: "files/university life en.jpg",
+            //   havePopup: true,
+            //   popup: {
+            //     imgPath: "img/testimonials/face-1.jpeg",
+            //     name: "Alex T Andrews",
+            //     title: "Our dear customer",
+            //     description: `Working with Alaa has been a pleasure.
+            // Better yet - I alerted them of a minor issue
+            // before going to sleep. The issue was fixed
+            // the next morning. I couldn't ask for better
+            // support. Thank you Alaa! This is easily a 5
+            // star freelancer.`,
+            //     stars: 3,
+            //   },
+            // },
+            {
+              box: "recommendation",
+              type: "Information",
+              src: "Software Engineer",
+              title: "Special work",
+              date: "APR 2019 - Until now",
+              description: `Special work - extensive experience in building and developing systems, developing and designing user interfaces for both phone applications and websites, in addition to building, developing and securing databases of all kinds.`,
+              linkPath: "https://wa.me/+963986223268",
+              havePopup: false,
+              popup: {},
+            },
+            {
+              box: "recommendation",
+              type: "View Website",
+              src: "Masfufat - Technical Company",
+              title: "Front-End Developer",
+              date: "MAR 2024 - Until now",
+              description: `Front-End Developer : <br>- Developed and enhanced user interfaces for masfufat.com using modern technologies such as HTML, CSS, JavaScript, and frameworks like Tailwind CSS and Vue.js.<br>- Collaborated with the design and development teams to improve user experience and meet requirements.<br>- Ensured cross-browser and cross-device compatibility through rigorous testing and performance optimization.`,
+              linkPath: "https://masfufat.com",
+              havePopup: false,
+              popup: {},
+            },
+            {
+              box: "recommendation",
+              type: "View Website",
+              src: "Art-tech - Printing and Decoration Company",
+              title: "Software Department Manager for Printing Machines",
+              date: "DEC 2022 - JUN 2024",
+              description: `<strong>Software Department Manager for Printing Machines :</strong><br>- Managed the software department for printing machines, including the development and optimization of software solutions for machine operations.<br/>- Oversaw software maintenance and performed regular updates to ensure optimal performance.<br/>- Collaborated with other departments to understand printing requirements and implement advanced technical solutions to enhance productivity.<br/>- Provided technical support and training to the team to ensure proper utilization of developed technologies.`,
+              linkPath: "https://art-techiq.com",
+              havePopup: false,
+              popup: {},
+            },
+            {
+              box: "recommendation",
+              type: "View Website",
+              src: "Alghadaq - Technical Company",
+              title: "Software Project Manager",
+              date: "DEC 2022 - DEC 2024",
+              description: `<strong>Software Project Manager :</strong><br>- Managed all software projects, including mobile app development and e-commerce website creation.<br>- Oversaw payment gateway integrations and linked shipping companies to clients' websites for seamless operations.<br>- Coordinated with technical teams to ensure on-time delivery and client satisfaction.<br>- Developed strategies to enhance processes and ensure the quality of delivered software solutions.`,
+              linkPath: "https://alghadaqit.tech",
+              havePopup: false,
+              popup: {},
+            },
+            {
+              box: "recommendation",
+              type: "View Website",
+              src: "Moustaql",
+              title: "Full Stack Developer",
+              date: "DEC 2021 - Until now",
+              description: `Programming services (websites, Android and iPhone applications,)`,
+              linkPath: "https://mostaql.com/u/Aquarius_IT",
+              havePopup: false,
+              popup: {},
+            },
+            {
+              box: "recommendation",
+              type: "View Website",
+              src: "Khamsat",
+              title: "Graphic designer",
+              date: "DEC 2021 - Until now",
+              description: `Design services (logos, visual identity, social media, marketing)`,
+              linkPath: "https://khamsat.com/user/aquarius_it",
+              havePopup: false,
+              popup: {},
+            },
+          ],
+        },
+      ],
+      contact: [
+        {
+          id: 1,
+          data: [
+            ["Country:", "Syria", "l"],
+            ["City:", "Homs", "l"],
+            ["Streat:", "Old Clock, City Center 2 Building", "l"],
+          ],
+        },
+        {
+          id: 2,
+          data: [
+            ["Email:", "alaaqutfa.work@gmail.com", "e"],
+            ["Whatsapp:", "+963986223268", "w"],
+            ["Office:", "+963986223268", "p"],
+          ],
+        },
+      ],
+    },
+    Brand: ["img/brands/1.png", "img/brands/2.png"],
+    Copyright: ["https://wa.me/+963986223268", "Alaa Qutfa"],
+    Menu: ["Home", "Portfolio", "History", "Contact"],
+    Language: [
+      ["EN", true, "en"],
+      ["AR", false, "ar"],
+    ],
+    Preloader: {
+      id: "preloader",
+      Name: "Alaa Qutfa",
+      JobTitle: "Software Engineer",
+    },
+  },
     portfolio_ar = {
       Data: {
         Top: {
@@ -650,9 +802,9 @@ $(function () {
         },
         Scroll: {
           About: [
-            ["العمر", currentYear - 2000],
-            ["البلد", "العراق"],
-            ["المدينة", "اربيل"],
+            ["العمر", currentYear - 2001],
+            ["البلد", "سوريا"],
+            ["المدينة", "حمص"],
           ],
           Languages: [
             {
@@ -665,7 +817,7 @@ $(function () {
               Id: "circleprog2",
               Type: "Circle",
               Name: "الأنكليزية",
-              Progress: "p77",
+              Progress: "p80",
             },
             {
               Id: "circleprog3",
@@ -683,7 +835,28 @@ $(function () {
           Skills: [
             // Web Programming Languages :
             {
-              Title: "لغات برمجة الويب :",
+              Title: "لغات البرمجة :",
+              items: [
+                { id: "lineprog5", Type: "line", Name: "JavaScript (ES6+)", Progress: "100" },
+                { id: "lineprog9", Type: "line", Name: "PHP", Progress: "100" },
+                { id: "lineprog18", Type: "line", Name: "Python", Progress: "100" },
+                {
+                  id: "lineprog11",
+                  Type: "line",
+                  Name: "Java",
+                  Progress: "85",
+                },
+                {
+                  id: "lineprog10",
+                  Type: "line",
+                  Name: "Dart",
+                  Progress: "100",
+                },
+              ],
+            },
+            // Front-End Technologies :
+            {
+              Title: "تقنيات الواجهات الأمامية :",
               items: [
                 {
                   id: "lineprog1",
@@ -700,6 +873,12 @@ $(function () {
                 {
                   id: "lineprog3",
                   Type: "line",
+                  Name: "Tailwindcss",
+                  Progress: "100",
+                },
+                {
+                  id: "lineprog3",
+                  Type: "line",
                   Name: "Bootstrap",
                   Progress: "100",
                 },
@@ -709,18 +888,17 @@ $(function () {
                   Name: "Sass",
                   Progress: "100",
                 },
-                { id: "lineprog5", Type: "line", Name: "JS", Progress: "100" },
                 {
-                  id: "lineprog6",
+                  id: "lineprog7",
                   Type: "line",
-                  Name: "Node js",
-                  Progress: "85",
+                  Name: "Vue js",
+                  Progress: "90",
                 },
                 {
                   id: "lineprog7",
                   Type: "line",
                   Name: "React js",
-                  Progress: "70",
+                  Progress: "90",
                 },
                 {
                   id: "lineprog8",
@@ -728,54 +906,149 @@ $(function () {
                   Name: "Jquery",
                   Progress: "100",
                 },
-                { id: "lineprog9", Type: "line", Name: "PHP", Progress: "100" },
               ],
             },
-            // Mobile Applications Programming Languages :
+            // Back-End Technologies :
             {
-              Title: "لغات برمجة تطبيقات الجوال :",
+              Title: "تقنيات الواجهات الخلفية :",
               items: [
                 {
-                  id: "lineprog10",
+                  id: "lineprog21",
                   Type: "line",
-                  Name: "Flutter & Dart",
-                  Progress: "95",
+                  Name: "Laravel",
+                  Progress: "100",
                 },
                 {
-                  id: "lineprog11",
+                  id: "lineprog6",
                   Type: "line",
-                  Name: "Java",
-                  Progress: "35",
+                  Name: "Node.js",
+                  Progress: "100",
+                },
+                {
+                  id: "lineprog22",
+                  Type: "line",
+                  Name: "Express.js",
+                  Progress: "100",
+                },
+              ],
+            },
+            // Databases :
+            {
+              Title: "قواعد البيانات :",
+              items: [
+                {
+                  id: "lineprog19",
+                  Type: "line",
+                  Name: "SQL/MySQL",
+                  Progress: "100",
+                },
+                {
+                  id: "lineprog20",
+                  Type: "line",
+                  Name: "MongoDB",
+                  Progress: "100",
+                },
+              ],
+            },
+            // Mobile Development :
+            {
+              Title: "تطوير تطبيقات الموبايل :",
+              items: [
+                {
+                  id: "lineprog23",
+                  Type: "line",
+                  Name: "Flutter",
+                  Progress: "100",
+                },
+                {
+                  id: "lineprog24",
+                  Type: "line",
+                  Name: "GetX",
+                  Progress: "100",
+                },
+              ],
+            },
+            // Version Control :
+            {
+              Title: "التحكم في الإصدارات :",
+              items: [
+                {
+                  id: "lineprog25",
+                  Type: "line",
+                  Name: "Git",
+                  Progress: "100",
+                },
+                {
+                  id: "lineprog26",
+                  Type: "line",
+                  Name: "GitHub",
+                  Progress: "100",
+                },
+                {
+                  id: "lineprog27",
+                  Type: "line",
+                  Name: "Azure",
+                  Progress: "100",
+                },
+              ],
+            },
+            // Tools & Platforms :
+            {
+              Title: "الأدوات والمنصات :",
+              items: [
+                {
+                  id: "lineprog28",
+                  Type: "line",
+                  Name: "Docker",
+                  Progress: "100",
+                },
+                {
+                  id: "lineprog29",
+                  Type: "line",
+                  Name: "Nginx",
+                  Progress: "100",
+                },
+                {
+                  id: "lineprog30",
+                  Type: "line",
+                  Name: "RESTful APIs",
+                  Progress: "100",
                 },
               ],
             },
             // UI/UX Programs :
             {
-              Title: "برامج واجهة المستخدم/تجربة المستخدم:",
+              Title: "UI/UX Programs :",
               items: [
                 {
                   id: "lineprog12",
                   Type: "line",
+                  Name: "Figma",
+                  Progress: "90",
+                },
+                {
+                  id: "lineprog12",
+                  Type: "line",
                   Name: "Adobe XD",
-                  Progress: "85",
+                  Progress: "100",
                 },
               ],
             },
             // Graphic Design Programs :
             {
-              Title: "برامج التصميم :",
+              Title: "برامج التصميم الجرافيكي :",
               items: [
                 {
                   id: "lineprog13",
                   Type: "line",
                   Name: "Adobe Photoshop",
-                  Progress: "85",
+                  Progress: "100",
                 },
                 {
                   id: "lineprog14",
                   Type: "line",
                   Name: "Adobe Illustrator",
-                  Progress: "85",
+                  Progress: "100",
                 },
               ],
             },
@@ -787,13 +1060,13 @@ $(function () {
                   id: "lineprog15",
                   Type: "line",
                   Name: "Adobe Premiere Pro",
-                  Progress: "75",
+                  Progress: "90",
                 },
                 {
                   id: "lineprog16",
                   Type: "line",
                   Name: "Adobe After Effects",
-                  Progress: "65",
+                  Progress: "80",
                 },
               ],
             },
@@ -805,7 +1078,7 @@ $(function () {
                   id: "lineprog17",
                   Type: "line",
                   Name: "Adobe Audition",
-                  Progress: "65",
+                  Progress: "70",
                 },
               ],
             },
@@ -828,23 +1101,23 @@ $(function () {
             "OOP",
             "Git & Github",
           ],
-          CV: "files/Alaa_Qutfa.pdf",
+          CV: "files/alaaqutfa.pdf",
         },
         Bottom: {
           Whatsapp: [
-            "https://wa.me/+9647517960618",
+            "https://wa.me/+963986223268",
             `<i class="fa-brands fa-whatsapp"></i>`,
           ],
           Facebook: [
-            "https://www.facebook.com/aloosh2712000/",
+            "https://www.facebook.com/alaaqutfa.tech",
             `<i class="fa-brands fa-facebook"></i>`,
           ],
           Instagram: [
-            "https://www.instagram.com/alaaqutfa/",
+            "https://www.instagram.com/alaaqutfa.tech",
             `<i class="fa-brands fa-instagram"></i>`,
           ],
           Linkedin: [
-            "https://www.linkedin.com/in/alaa-qutfa-96a326256/",
+            "https://www.linkedin.com/in/alaaqutfa",
             `<i class="fa-brands fa-linkedin"></i>`,
           ],
         },
@@ -854,7 +1127,7 @@ $(function () {
           banner: {
             title: "اكتشف مساحتي الفنية المذهلة!",
             startStaticPhrae: "&lt;<i>code</i>&gt; أقوم ببناء",
-            slidePhrases: `["واجهات الويب.", "تطبيقات ios و android."]`,
+            slidePhrases: `["واجهات الويب.", "تطبيقات ايفون و اندرويد.","نظام تخطيط موارد الشركات","نظام إدارة علاقات العملاء"]`,
             endStaticPhrae: "&lt;/<i>code</i>&gt;",
             btnText: "استكشف الآن",
             btnLink: "",
@@ -864,41 +1137,41 @@ $(function () {
             imgPath: "img/face-2.png",
           },
           counters: [
-            ["سنوات خبرة", currentYear - 2015],
-            ["المشاريع المنجزة", 25],
-            ["الزبائن السعداء", 65],
-            ["الأوسمة والجوائز", 13],
+            ["سنوات خبرة", currentYear - 2019],
+            ["المشاريع المنجزة", 12],
+            ["الزبائن السعداء", 12],
+            ["الأوسمة والجوائز", 8],
           ],
           services: [
             {
               title: "تطوير تطبيقات الهاتف",
               description: `حول أفكارك إلى واقع من خلال بناء تطبيقك الخاص، وارتقي بأعمالك إلى الفخامة والتميز، واجعل خدماتك ومبيعاتك أسهل وأسرع وعلى نطاق أوسع. وسأقدم لك الحلول المناسبة لتحقيق ذلك.`,
-              linkUrl: "https://wa.me/+9647517960618",
+              linkUrl: "https://wa.me/+963986223268",
             },
             {
               title: "خدمات تطوير الويب",
               description: `أقدم لك مواقع الويب الأكثر أمانًا والأسرع والأفضل جودة مع مجموعة واسعة من الخيارات التي تساعدك في العثور على حلمك وبدء عملك عبر الإنترنت.`,
-              linkUrl: "https://wa.me/+9647517960618",
+              linkUrl: "https://wa.me/+963986223268",
             },
             {
               title: "الاستضافة",
               description: `أفضل وأسرع استضافة مع دعم 24/7 وبأسعار مميزة مع امتدادات غير محدودة`,
-              linkUrl: "https://wa.me/+9647517960618",
+              linkUrl: "https://wa.me/+963986223268",
             },
             {
               title: "الأمن الإلكتروني",
               description: `يعد الأمن السيبراني مفهومًا يتغير باستمرار مع ظهور تهديدات جديدة كل يوم تهدد أمان معلوماتك وبياناتك من المتسللين. أقدم لك خدماتي لحماية بياناتك وأعمالك ومواكبة ما يحدث في الفضاء الإلكتروني`,
-              linkUrl: "https://wa.me/+9647517960618",
+              linkUrl: "https://wa.me/+963986223268",
             },
             {
               title: "التسويق",
               description: `سأساعدك في وضع خطة للوصول بمنتجك إلى أكبر عدد من العملاء وتفعيل حسابات أعمالك على صفحات التواصل الاجتماعي.`,
-              linkUrl: "https://wa.me/+9647517960618",
+              linkUrl: "https://wa.me/+963986223268",
             },
             {
               title: "التصميم",
               description: `سأضيف لمسات فنية على عملك ليجعله مميزاً ومتألقاً بين جميع الأعمال المشابهة.`,
-              linkUrl: "https://wa.me/+9647517960618",
+              linkUrl: "https://wa.me/+963986223268",
             },
           ],
           prices: [
@@ -918,7 +1191,7 @@ $(function () {
                 ["مجاني CDN", true],
                 ["عنوان IP مخصص", true],
               ],
-              linkUrl: "https://wa.me/+9647517960618",
+              linkUrl: "https://wa.me/+963986223268",
               note: null,
             },
             {
@@ -937,7 +1210,7 @@ $(function () {
                 ["مجاني CDN", true],
                 ["عنوان IP مخصص", true],
               ],
-              linkUrl: "https://wa.me/+9647517960618",
+              linkUrl: "https://wa.me/+963986223268",
               note: null,
             },
             {
@@ -956,7 +1229,7 @@ $(function () {
                 ["مجاني CDN", false],
                 ["عنوان IP مخصص", true],
               ],
-              linkUrl: "https://wa.me/+9647517960618",
+              linkUrl: "https://wa.me/+963986223268",
               note: null,
             },
             {
@@ -975,7 +1248,7 @@ $(function () {
                 ["مجاني CDN", false],
                 ["عنوان IP مخصص", false],
               ],
-              linkUrl: "https://wa.me/+9647517960618",
+              linkUrl: "https://wa.me/+963986223268",
               note: null,
             },
           ],
@@ -990,10 +1263,19 @@ $(function () {
           filter_list: [
             {
               type: "web",
-              imgPath: "files/Sites/0/Tyndale.png",
-              title: "Tyndale",
-              description: "",
-              templateUrl: "https://aqtemp.netlify.app",
+              imgPath: "img/gallery/Aljazeera-mockup.png",
+              title: "مكائن الجزيرة",
+              description: "تأسست شركة الجزيرة للآلات في عام 1995، ومنذ ذلك الحين نجحت في توريد معدات الطباعة وخدمات الطباعة، والتي تشمل أيضًا استيراد وتسويق المواد الخام، وتقديم المشورة وتدريب الموظفين الفنيين. من أجل استيعاب مجموعة أكبر من المطابع وخدمة مساحة أكبر، أصبح لدى شركة الجزيرة للآلات الآن فرعين يقعان في (بغداد وأربيل / العراق).",
+              templateUrl: "https://aljazeeramachinery.netlify.app/",
+              hBG: [true, "#fff"],
+            },
+            {
+              type: "web",
+              imgPath: "img/gallery/world-gate.png",
+              title: "بوابة العالم - الطبية",
+              description: "تتمتع شركة بوابة العالم للمستلزمات الطبية والمختبرية بقوة تقنية قوية مكونة من مهندسي خدمة متخصصين ومتفانين للعناية بالخدمة وخدمة ما بعد البيع للمعدات الطبية في مجال الأمراض الجلدية والتجميلية (آلات إزالة الشعر Alex & Laser Diode، IPL) وجميع نوع المعدات الطبية في جميع أنحاء العراق - إقليم كردستان. تم تأسيس بوابة العالم للتوريدات الطبية والمخبرية في منتصف عام 2009 مما حدد حاجة السوق للمعدات الطبية عالية الجودة في مجال الأمراض الجلدية والتجميلية في العراق - إقليم كردستان وبأسعار معقولة.",
+              templateUrl: "https://worldgate-medical.netlify.app/",
+              hBG: [true, "#fff"],
             },
           ],
         },
@@ -1001,6 +1283,17 @@ $(function () {
           {
             title: "التعليم",
             data: [
+              {
+                box: "diplome",
+                type: "شهادة الخبرة",
+                src: "أكاديمية الأفق ماليزيا",
+                title: "مهندس برمجيات",
+                date: "ديسمبر 2023",
+                description: "طالب هندسة معلوماتية",
+                linkPath: "files/alofuk.jpg",
+                havePopup: false,
+                popup: null,
+              },
               {
                 box: "diplome",
                 type: "دبلومة",
@@ -1112,17 +1405,28 @@ $(function () {
                 title: "عمل خاص",
                 date: "أبريل 2018 – حتى الآن",
                 description: `عمل خاص - خبرة واسعة في بناء وتطوير الأنظمة وتطوير وتصميم واجهات المستخدم لكل من تطبيقات الهاتف والمواقع الإلكترونية، بالإضافة إلى بناء وتطوير وتأمين قواعد البيانات بكافة أنواعها.`,
-                linkPath: "https://wa.me/+9647517960618",
+                linkPath: "https://wa.me/+963986223268",
                 havePopup: false,
                 popup: {},
               },
               {
                 box: "recommendation",
                 type: "عرض الموقع",
-                src: "ART-TECH / وقت كامل",
-                title: "مدير الانتاج",
-                date: "ديسمبر 2022 - حتى الآن",
-                description: `مدير إنتاج في شركة آرت تك المتخصصة في الطباعة والديكور.`,
+                src: "Masfufat - شركة تقنية",
+                title: "مطوّر واجهات أمامية",
+                date: "مارس 2024 - حتى الأن",
+                description: `<strong>مطوّر واجهات أمامية :</strong><br/>- طوّرت وحسّنت واجهات المستخدم لموقع masfufat.com باستخدام تقنيات حديثة مثل HTML، CSS، JavaScript، وإطارات العمل مثل Tailwind CSS و Vue.js.<br/>- تعاونت مع فرق التصميم والتطوير لتحسين تجربة المستخدم وتلبية المتطلبات.<br/>- ضمنت التوافق عبر المتصفحات والأجهزة المختلفة من خلال اختبارات دقيقة وتحسين الأداء.`,
+                linkPath: "https://masfufat.com",
+                havePopup: false,
+                popup: {},
+              },
+              {
+                box: "recommendation",
+                type: "عرض الموقع",
+                src: "Art-tech - شركة الطباعة والديكور",
+                title: "مدير قسم البرمجيات لآلات الطباعة",
+                date: "ديسمبر 2022 - يونيو 2024",
+                description: `<strong>مدير قسم البرمجيات لآلات الطباعة :</strong><br/>- أدرت قسم البرمجيات لآلات الطباعة، بما في ذلك تطوير وتحسين الحلول البرمجية لعمليات تشغيل الآلات.<br/>- أشرفت على صيانة البرمجيات وأجريت تحديثات منتظمة لضمان الأداء الأمثل.<br/>- تعاونت مع الأقسام الأخرى لفهم متطلبات الطباعة وتنفيذ حلول تقنية متقدمة لتعزيز الإنتاجية.<br/>- قدمت الدعم الفني والتدريب للفريق لضمان الاستخدام الصحيح للتقنيات المطورة.`,
                 linkPath: "https://art-techiq.com",
                 havePopup: false,
                 popup: {},
@@ -1130,10 +1434,21 @@ $(function () {
               {
                 box: "recommendation",
                 type: "عرض الموقع",
-                src: "مستقل / عن بعد",
+                src: "Alghadaq - شركة تقنية",
+                title: "مدير المشاريع البرمجية",
+                date: "ديسمبر 2022 - ديسمبر 2024",
+                description: `<strong>مدير مشاريع برمجية :</strong><br/>- أدرت جميع المشاريع البرمجية، بما في ذلك تطوير تطبيقات الجوال وإنشاء مواقع التجارة الإلكترونية.<br/>- أشرفت على تكامل بوابات الدفع وربط شركات الشحن بمواقع العملاء لضمان عمليات سلسة.<br/>- نسقت مع الفرق التقنية لضمان التسليم في الوقت المحدد وتحقيق رضا العملاء.<br/>- طورت استراتيجيات لتحسين العمليات وضمان جودة الحلول البرمجية المقدمة.`,
+                linkPath: "https://alghadaqit.tech",
+                havePopup: false,
+                popup: {},
+              },
+              {
+                box: "recommendation",
+                type: "عرض الموقع",
+                src: "مستقل",
                 title: "Full Stack مطور",
                 date: "ديسمبر 2021 - حتى الآن",
-                description: `خدمات البرمجة (مواقع الويب، تطبيقات، أنظمة أندرويد وآيفون)`,
+                description: `خدمات البرمجة (مواقع الويب، تطبيقات أندرويد وآيفون)`,
                 linkPath: "https://mostaql.com/u/Aquarius_IT",
                 havePopup: false,
                 popup: {},
@@ -1141,22 +1456,11 @@ $(function () {
               {
                 box: "recommendation",
                 type: "عرض الموقع",
-                src: "خمسات / عن بعد",
+                src: "خمسات",
                 title: "مصمم",
                 date: "ديسمبر 2021 - حتى الآن",
                 description: `خدمات التصميم (الشعارات، الهوية البصرية، وسائل التواصل الاجتماعي، التسويق)`,
                 linkPath: "https://khamsat.com/user/aquarius_it",
-                havePopup: false,
-                popup: {},
-              },
-              {
-                box: "recommendation",
-                type: "عرض صفحة الفيسبوك",
-                src: "Al-Zahraa Press / وقت كامل",
-                title: "مصمم",
-                date: "يناير 2019 - يناير 2020",
-                description: `تصميم الملصقات الإعلانية`,
-                linkPath: "https://www.facebook.com/alzahra511/",
                 havePopup: false,
                 popup: {},
               },
@@ -1167,24 +1471,24 @@ $(function () {
           {
             id: 1,
             data: [
-              ["البلد:", "العراق", "l"],
-              ["المدينة:", "أربيل", "l"],
-              ["الشارع:", "بختياري , شارع غولان", "l"],
+              ["البلد:", "سوريا", "l"],
+              ["المدينة:", "حمص", "l"],
+              ["الشارع:", "الساعة القديمة, بناء سيتي سنتر 2", "l"],
             ],
           },
           {
             id: 2,
             data: [
-              ["Email:", "me@alaaqutfa.tech", "e"],
-              ["Whatsapp:", "+9647517960618", "w"],
-              ["Office:", "+9647511639769", "p"],
+              ["Email:", "alaaqutfa.work@gmail.com", "e"],
+              ["Whatsapp:", "+963986223268", "w"],
+              ["Office:", "+963986223268", "p"],
             ],
           },
         ],
       },
       Brand: ["img/brands/1.png", "img/brands/2.png"],
-      Copyright: ["https://wa.me/+9647517960618", "علاء قطفة"],
-      Menu: ["الصفحة الرئيسية", "المعرض", "التاريخ", "تواصل"],
+      Copyright: ["https://wa.me/+963986223268", "علاء قطفة"],
+      Menu: ["الصفحة الرئيسية", "المعرض", "التاريخ", "الأتصال"],
       Language: [
         ["EN", false, "en"],
         ["ع", true, "ar"],
@@ -1204,8 +1508,8 @@ $(function () {
     portfolio = portfolio_en;
   }
   var portfolio_data_scroll_about = document.getElementById(
-      "portfolio-data-scroll-about"
-    ),
+    "portfolio-data-scroll-about"
+  ),
     portfolio_data_scroll_languages = document.getElementById(
       "portfolio-data-scroll-languages"
     ),
@@ -1297,9 +1601,8 @@ $(function () {
             <h6>${skill.Name}</h6>
           </div>
           <div class="art-line-progress">
-            <div id="${skill.id}" class="${
-        skill.Type + " " + skill.Progress
-      }"></div>
+            <div id="${skill.id}" class="${skill.Type + " " + skill.Progress
+        }"></div>
           </div>
         </div>      
       `;
@@ -1436,9 +1739,8 @@ $(function () {
   jQuery.each(portfolio.Content.home.prices, (index, item) => {
     portfolio_content_home_price.innerHTML += `
         <div class="col-lg-3">
-        <div class="art-a art-price ${
-          item.isPopular == true ? "art-popular-price" : ""
-        }">
+        <div class="art-a art-price ${item.isPopular == true ? "art-popular-price" : ""
+      }">
           <div class="art-price-body">
             <h5 class="mb-30">${item.title}</h5>
             <div class="art-price-cost">
@@ -1451,22 +1753,20 @@ $(function () {
               class="art-link art-color-link art-w-chevron"
               >Order now</a
             >
-            ${
-              item.note != null
-                ? `<div class="art-asterisk">
+            ${item.note != null
+        ? `<div class="art-asterisk">
             <sup>*</sup>Free only when ordering paid services
           </div>`
-                : ""
-            }
+        : ""
+      }
           </div>
         </div>
       </div>
     `;
     let list = document.querySelectorAll(".price-list");
     jQuery.each(item.conditions, (i, c) => {
-      list[index].innerHTML += `<li class="${
-        c[1] == true ? "art-empty-item" : ""
-      }">${c[0]}</li>`;
+      list[index].innerHTML += `<li class="${c[1] == true ? "art-empty-item" : ""
+        }">${c[0]}</li>`;
     });
   });
   jQuery.each(portfolio.Brand, (index, item) => {
@@ -1534,7 +1834,7 @@ $(function () {
           href="${item.imgPath}"
           class="art-a art-portfolio-item-frame art-horizontal"
         >
-          <img src="${item.imgPath}" alt="item" />
+          <img src="${item.imgPath}" style="background-color: ${item.hBG[0] == true ? item.hBG[1] : "transparent"}" alt="item" />
           <span class="art-item-hover"
             ><i class="fas fa-expand"></i
           ></span>
@@ -1590,15 +1890,13 @@ $(function () {
         </p>
         <a
           data-fancybox="${d.box}"
-          href="${
-            d.havePopup == true ? "#art-recomendation-popup-" + id : d.linkPath
-          }"
+          href="${d.havePopup == true ? "#art-recomendation-popup-" + id : d.linkPath
+        }"
           class="art-link art-color-link art-w-chevron"
           >${d.type}</a
         >
       </div>
-      ${
-        d.havePopup == true
+      ${d.havePopup == true
           ? `
       <!-- popup -->
       <div
@@ -1643,7 +1941,7 @@ $(function () {
     </div>
       `
           : ""
-      }
+        }
       `;
     });
   });
@@ -1692,9 +1990,8 @@ $(function () {
     });
   });
   jQuery.each(portfolio.Language, (index, item) => {
-    portfolio_language.innerHTML += `<li class="${item[2]} ${
-      item[1] == true ? `art-active-lang"` : "lang-btn"
-    }" style="cursor: pointer;"><a>${item[0]}</a></li>`;
+    portfolio_language.innerHTML += `<li class="${item[2]} ${item[1] == true ? `art-active-lang"` : "lang-btn"
+      }" style="cursor: pointer;"><a>${item[0]}</a></li>`;
   });
   var lang_btn = document.querySelectorAll(".lang-btn");
   jQuery.each(lang_btn, (index, item) => {
@@ -1725,7 +2022,7 @@ $(function () {
       delay: 200,
       duration: 600,
       easing: "linear",
-      complete: function (anim) {},
+      complete: function (anim) { },
     });
     anime({
       targets: ".art-preloader",
