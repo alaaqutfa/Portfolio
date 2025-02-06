@@ -463,64 +463,25 @@ $(function () {
         ],
         recommendations: [
           {
-            imgPath: "img/testimonials/face-1.jpeg",
-            name: "Alex T Andrews",
-            description: "Our dear customer",
-            text: `Working with Alaa has been a pleasure.
-            Better yet - I alerted them of a minor issue
-            before going to sleep. The issue was fixed
-            the next morning. I couldn't ask for better
-            support. Thank you Alaa! This is easily a 5
-            star freelancer.`,
-            stars: 2,
+            imgPath: "img/testimonials/moaaz.jpeg",
+            name: "Moaaz Al-habbal",
+            description: "Web Developer | Voice over artist",
+            text: `Alaa is a highly skilled web developer with a keen eye for detail and a passion for building efficient, scalable solutions. His ability to turn complex ideas into smooth, functional web applications is truly impressive.<br>What makes Alaa stand out is his problem-solving mindset and dedication to writing clean, maintainable code. He’s always eager to learn, adapt, and contribute to team success, making collaboration with him both productive and enjoyable.`,
+            stars: 5,
           },
           {
-            imgPath: "img/testimonials/face-2.jpeg",
-            name: "Alex T Andrews",
-            description: "Our dear customer",
-            text: `Working with Alaa has been a pleasure.
-            Better yet - I alerted them of a minor issue
-            before going to sleep. The issue was fixed
-            the next morning. I couldn't ask for better
-            support. Thank you Alaa! This is easily a 5
-            star freelancer.`,
-            stars: 3,
+            imgPath: "img/testimonials/hamza.jpeg",
+            name: "Hamza alsaghrji",
+            description: "Full-stack Web Developer at Masfufat Dropshipping Company in Saudi Arabia",
+            text: `I had the pleasure of working with Alaa, and his talent as a front-end developer is truly remarkable. His creativity, attention to detail, and problem-solving skills always stand out. Working with him was both inspiring and insightful.`,
+            stars: 5,
           },
           {
-            imgPath: "img/testimonials/face-3.jpeg",
-            name: "Alex T Andrews",
-            description: "Our dear customer",
-            text: `Working with Alaa has been a pleasure.
-            Better yet - I alerted them of a minor issue
-            before going to sleep. The issue was fixed
-            the next morning. I couldn't ask for better
-            support. Thank you Alaa! This is easily a 5
-            star freelancer.`,
-            stars: 3,
-          },
-          {
-            imgPath: "img/testimonials/face-4.jpg",
-            name: "Alex T Andrews",
-            description: "Our dear customer",
-            text: `Working with Alaa has been a pleasure.
-            Better yet - I alerted them of a minor issue
-            before going to sleep. The issue was fixed
-            the next morning. I couldn't ask for better
-            support. Thank you Alaa! This is easily a 5
-            star freelancer.`,
-            stars: 3,
-          },
-          {
-            imgPath: "img/testimonials/face-5.jpg",
-            name: "Alex T Andrews",
-            description: "Our dear customer",
-            text: `Working with Alaa has been a pleasure.
-            Better yet - I alerted them of a minor issue
-            before going to sleep. The issue was fixed
-            the next morning. I couldn't ask for better
-            support. Thank you Alaa! This is easily a 5
-            star freelancer.`,
-            stars: 3,
+            imgPath: "img/testimonials/mahmood.PNG",
+            name: "Mahmood Shaheen",
+            description: "UXUI Designer || IT Software",
+            text: `Engineer Alaa, one of the distinguished people at work, provides professional and fast services and is understanding in dealing, all respect to you`,
+            stars: 5,
           },
         ],
       },
@@ -1348,7 +1309,29 @@ $(function () {
               note: null,
             },
           ],
-          recommendations: [],
+          recommendations: [
+            {
+              imgPath: "img/testimonials/moaaz.jpeg",
+              name: "معاذ الحبال",
+              description: "مطور ويب | فنان صوتي",
+              text: `علاء هو مطور ويب ماهر للغاية يتمتع بنظرة ثاقبة للتفاصيل وشغف ببناء حلول فعالة وقابلة للتطوير. قدرته على تحويل الأفكار المعقدة إلى تطبيقات ويب سلسة ووظيفية مثيرة للإعجاب حقًا.<br>ما يجعل علاء مميزًا هو عقليته في حل المشكلات وتفانيه في كتابة أكواد نظيفة وقابلة للصيانة. إنه دائمًا حريص على التعلم والتكيف والمساهمة في نجاح الفريق، مما يجعل التعاون معه منتجًا وممتعًا.`,
+              stars: 5,
+            },
+            {
+              imgPath: "img/testimonials/hamza.jpeg",
+              name: "حمزة  الصاغرجي",
+              description: "مطور ويب متكامل لدى شركة مصفوفات دروبشيبنج في المملكة العربية السعودية",
+              text: `لقد كان من دواعي سروري العمل مع علاء، وموهبته كمطور واجهة أمامية رائعة حقًا. يتميز دائمًا بإبداعه واهتمامه بالتفاصيل ومهاراته في حل المشكلات. كان العمل معه ملهمًا ومفيدًا.`,
+              stars: 5,
+            },
+            {
+              imgPath: "img/testimonials/mahmood.PNG",
+              name: "محمود شاهين",
+              description: "مصمم واجهة المستخدم وتجربة المستخدم || برامج تكنولوجيا المعلومات",
+              text: `المهندس علاء من المميزين في العمل ويقدم خدمات احترافية وسريعة ومتفهم في التعامل كل الاحترام لكم`,
+              stars: 5,
+            },
+          ],
         },
         gallery: {
           filter_nav: [
