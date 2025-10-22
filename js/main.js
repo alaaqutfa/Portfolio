@@ -727,28 +727,6 @@ $(function () {
         {
           title: "Work History",
           data: [
-            // {
-            //   box: "recommendation",
-            //   type: "Special work",
-            //   src: "Graphic & Web Designer",
-            //   title: "Student",
-            //   date: "april 2018 - Until now",
-            //   description: "Design advertising posters and personal websites",
-            //   linkPath: "files/university life en.jpg",
-            //   havePopup: true,
-            //   popup: {
-            //     imgPath: "img/testimonials/face-1.jpeg",
-            //     name: "Alex T Andrews",
-            //     title: "Our dear customer",
-            //     description: `Working with Alaa has been a pleasure.
-            // Better yet - I alerted them of a minor issue
-            // before going to sleep. The issue was fixed
-            // the next morning. I couldn't ask for better
-            // support. Thank you Alaa! This is easily a 5
-            // star freelancer.`,
-            //     stars: 3,
-            //   },
-            // },
             {
               box: "recommendation",
               type: "Information",
