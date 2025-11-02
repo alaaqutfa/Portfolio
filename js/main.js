@@ -314,7 +314,7 @@ $(function () {
       },
       Bottom: {
         Whatsapp: [
-          "https://wa.me/+963986223268",
+          "https://wa.me/+9647864034927",
           `<i class="fa-brands fa-whatsapp"></i>`,
         ],
         Facebook: [
@@ -355,32 +355,32 @@ $(function () {
           {
             title: "Mobile Applications Development",
             description: `Turn your ideas into reality by building your own application, elevate your business to luxury and excellence, and make your services and sales easier, faster and on a larger scale. I will provide you with the appropriate solutions to achieve this.`,
-            linkUrl: "https://wa.me/+963986223268",
+            linkUrl: "https://wa.me/+9647864034927",
           },
           {
             title: "Web Development",
             description: `I offer you the safest, fastest, and best quality websites with a wide range of options that help you find your dream and start your business online.`,
-            linkUrl: "https://wa.me/+963986223268",
+            linkUrl: "https://wa.me/+9647864034927",
           },
           {
             title: "Hosting",
             description: `The best and fastest hosting with 24/7 support at special prices with unlimited extensions`,
-            linkUrl: "https://wa.me/+963986223268",
+            linkUrl: "https://wa.me/+9647864034927",
           },
           {
             title: "Cyber Security",
             description: `Cybersecurity is a constantly changing concept with new threats emerging every day that threaten the security of your information and data from hackers. I offer you my services to protect your data and business and keep up with what is happening in cyberspace`,
-            linkUrl: "https://wa.me/+963986223268",
+            linkUrl: "https://wa.me/+9647864034927",
           },
           {
             title: "Marketing",
             description: `I will help you develop a plan to make your product reach the largest number of customers and make your business accounts active on social media pages.`,
-            linkUrl: "https://wa.me/+963986223268",
+            linkUrl: "https://wa.me/+9647864034927",
           },
           {
             title: "Graphic Design",
             description: `I will add artistic touches to your work to make it distinctive and shine among all similar works.`,
-            linkUrl: "https://wa.me/+963986223268",
+            linkUrl: "https://wa.me/+9647864034927",
           },
         ],
         prices: [
@@ -400,7 +400,7 @@ $(function () {
               ["Free CDN", true],
               ["Dedicated IP Address", true],
             ],
-            linkUrl: "https://wa.me/+963986223268",
+            linkUrl: "https://wa.me/+9647864034927",
             note: null,
           },
           {
@@ -419,7 +419,7 @@ $(function () {
               ["Free CDN", true],
               ["Dedicated IP Address", true],
             ],
-            linkUrl: "https://wa.me/+963986223268",
+            linkUrl: "https://wa.me/+9647864034927",
             note: null,
           },
           {
@@ -438,7 +438,7 @@ $(function () {
               ["Free CDN", false],
               ["Dedicated IP Address", true],
             ],
-            linkUrl: "https://wa.me/+963986223268",
+            linkUrl: "https://wa.me/+9647864034927",
             note: null,
           },
           {
@@ -457,7 +457,7 @@ $(function () {
               ["Free CDN", false],
               ["Dedicated IP Address", false],
             ],
-            linkUrl: "https://wa.me/+963986223268",
+            linkUrl: "https://wa.me/+9647864034927",
             note: null,
           },
         ],
@@ -492,6 +492,14 @@ $(function () {
           [".applications", "Applications"],
         ],
         filter_list: [
+          // {
+          //   type: "web",
+          //   imgPath: "img/gallery/groupcoin.png",
+          //   title: "Group Coin SAL",
+          //   description: "Group Coin SAL is a retail chain in Lebanon offering a modern shopping experience across multiple malls. I manage the software and digital media department, overseeing system development, ERP/CRM integration, and digital marketing to support the company's technological growth.",
+          //   templateUrl: "https://coin-market.store",
+          //   hBG: [true, "#fff"],
+          // },
           {
             type: "web",
             imgPath: "img/gallery/syriansouq.png",
@@ -732,9 +740,24 @@ $(function () {
               type: "Information",
               src: "Software Engineer",
               title: "Special work",
-              date: "APR 2019 - Until now",
+              date: "APR 2019 - PRESENT",
               description: `Special work - extensive experience in building and developing systems, developing and designing user interfaces for both phone applications and websites, in addition to building, developing and securing databases of all kinds.`,
-              linkPath: "https://wa.me/+963986223268",
+              linkPath: "https://wa.me/+9647864034927",
+              havePopup: false,
+              popup: {},
+            },
+            {
+              box: "recommendation",
+              type: "View Website",
+              src: "Group Coin SAL",
+              title: "Software & Media Department Manager",
+              date: "SEP 2025 - PRESENT",
+              description: `<strong>Software & Media Department Manager :</strong><br>
+                - Leads the software and digital media department within the Group Coin branch.<br>
+                - Manages the development, maintenance, and automation of internal systems, including CRM and ERP integrations.<br>
+                - Oversees the company's social media presence and digital marketing campaigns.<br>
+                - Designs visual content, promotional materials, and coordinates with management to enhance brand visibility and customer engagement.`,
+              linkPath: "https://coin-market.store",
               havePopup: false,
               popup: {},
             },
@@ -743,7 +766,7 @@ $(function () {
               type: "View Website",
               src: "Masfufat - Technical Company",
               title: "Front-End Developer",
-              date: "MAR 2024 - Until now",
+              date: "MAR 2024 - OCT 2025",
               description: `Front-End Developer : <br>- Developed and enhanced user interfaces for masfufat.com using modern technologies such as HTML, CSS, JavaScript, and frameworks like Tailwind CSS and Vue.js.<br>- Collaborated with the design and development teams to improve user experience and meet requirements.<br>- Ensured cross-browser and cross-device compatibility through rigorous testing and performance optimization.`,
               linkPath: "https://masfufat.com",
               havePopup: false,
@@ -776,7 +799,7 @@ $(function () {
               type: "View Website",
               src: "Moustaql",
               title: "Full Stack Developer",
-              date: "DEC 2021 - Until now",
+              date: "DEC 2021 - PRESENT",
               description: `Programming services (websites, Android and iPhone applications,)`,
               linkPath: "https://mostaql.com/u/Aquarius_IT",
               havePopup: false,
@@ -787,7 +810,7 @@ $(function () {
               type: "View Website",
               src: "Khamsat",
               title: "Graphic designer",
-              date: "DEC 2021 - Until now",
+              date: "DEC 2021 - PRESENT",
               description: `Design services (logos, visual identity, social media, marketing)`,
               linkPath: "https://khamsat.com/user/aquarius_it",
               havePopup: false,
@@ -809,14 +832,14 @@ $(function () {
           id: 2,
           data: [
             ["Email:", "alaaqutfa.work@gmail.com", "e"],
-            ["Whatsapp:", "+963986223268", "w"],
-            ["Office:", "+963986223268", "p"],
+            ["Whatsapp:", "+9647864034927", "w"],
+            ["Office:", "+9647864034927", "p"],
           ],
         },
       ],
     },
     Brand: ["img/brands/1.png", "img/brands/2.png"],
-    Copyright: ["https://wa.me/+963986223268", "Alaa Qutfa"],
+    Copyright: ["https://wa.me/+9647864034927", "Alaa Qutfa"],
     Menu: ["Home", "Portfolio", "History", "Contact"],
     Language: [
       ["EN", true, "en"],
@@ -1140,7 +1163,7 @@ $(function () {
         },
         Bottom: {
           Whatsapp: [
-            "https://wa.me/+963986223268",
+            "https://wa.me/+9647864034927",
             `<i class="fa-brands fa-whatsapp"></i>`,
           ],
           Facebook: [
@@ -1181,32 +1204,32 @@ $(function () {
             {
               title: "تطوير تطبيقات الهاتف",
               description: `حول أفكارك إلى واقع من خلال بناء تطبيقك الخاص، وارتقي بأعمالك إلى الفخامة والتميز، واجعل خدماتك ومبيعاتك أسهل وأسرع وعلى نطاق أوسع. وسأقدم لك الحلول المناسبة لتحقيق ذلك.`,
-              linkUrl: "https://wa.me/+963986223268",
+              linkUrl: "https://wa.me/+9647864034927",
             },
             {
               title: "خدمات تطوير الويب",
               description: `أقدم لك مواقع الويب الأكثر أمانًا والأسرع والأفضل جودة مع مجموعة واسعة من الخيارات التي تساعدك في العثور على حلمك وبدء عملك عبر الإنترنت.`,
-              linkUrl: "https://wa.me/+963986223268",
+              linkUrl: "https://wa.me/+9647864034927",
             },
             {
               title: "الاستضافة",
               description: `أفضل وأسرع استضافة مع دعم 24/7 وبأسعار مميزة مع امتدادات غير محدودة`,
-              linkUrl: "https://wa.me/+963986223268",
+              linkUrl: "https://wa.me/+9647864034927",
             },
             {
               title: "الأمن الإلكتروني",
               description: `يعد الأمن السيبراني مفهومًا يتغير باستمرار مع ظهور تهديدات جديدة كل يوم تهدد أمان معلوماتك وبياناتك من المتسللين. أقدم لك خدماتي لحماية بياناتك وأعمالك ومواكبة ما يحدث في الفضاء الإلكتروني`,
-              linkUrl: "https://wa.me/+963986223268",
+              linkUrl: "https://wa.me/+9647864034927",
             },
             {
               title: "التسويق",
               description: `سأساعدك في وضع خطة للوصول بمنتجك إلى أكبر عدد من العملاء وتفعيل حسابات أعمالك على صفحات التواصل الاجتماعي.`,
-              linkUrl: "https://wa.me/+963986223268",
+              linkUrl: "https://wa.me/+9647864034927",
             },
             {
               title: "التصميم",
               description: `سأضيف لمسات فنية على عملك ليجعله مميزاً ومتألقاً بين جميع الأعمال المشابهة.`,
-              linkUrl: "https://wa.me/+963986223268",
+              linkUrl: "https://wa.me/+9647864034927",
             },
           ],
           prices: [
@@ -1226,7 +1249,7 @@ $(function () {
                 ["مجاني CDN", true],
                 ["عنوان IP مخصص", true],
               ],
-              linkUrl: "https://wa.me/+963986223268",
+              linkUrl: "https://wa.me/+9647864034927",
               note: null,
             },
             {
@@ -1245,7 +1268,7 @@ $(function () {
                 ["مجاني CDN", true],
                 ["عنوان IP مخصص", true],
               ],
-              linkUrl: "https://wa.me/+963986223268",
+              linkUrl: "https://wa.me/+9647864034927",
               note: null,
             },
             {
@@ -1264,7 +1287,7 @@ $(function () {
                 ["مجاني CDN", false],
                 ["عنوان IP مخصص", true],
               ],
-              linkUrl: "https://wa.me/+963986223268",
+              linkUrl: "https://wa.me/+9647864034927",
               note: null,
             },
             {
@@ -1283,7 +1306,7 @@ $(function () {
                 ["مجاني CDN", false],
                 ["عنوان IP مخصص", false],
               ],
-              linkUrl: "https://wa.me/+963986223268",
+              linkUrl: "https://wa.me/+9647864034927",
               note: null,
             },
           ],
@@ -1558,7 +1581,22 @@ $(function () {
                 title: "عمل خاص",
                 date: "أبريل 2018 – حتى الآن",
                 description: `عمل خاص - خبرة واسعة في بناء وتطوير الأنظمة وتطوير وتصميم واجهات المستخدم لكل من تطبيقات الهاتف والمواقع الإلكترونية، بالإضافة إلى بناء وتطوير وتأمين قواعد البيانات بكافة أنواعها.`,
-                linkPath: "https://wa.me/+963986223268",
+                linkPath: "https://wa.me/+9647864034927",
+                havePopup: false,
+                popup: {},
+              },
+              {
+                box: "recommendation",
+                type: "عرض الموقع",
+                src: "مجموعة كوين ش.م.ل",
+                title: "مدير قسم البرمجة والإعلام الرقمي",
+                date: "سبتمبر 2025 - حتى الآن",
+                description: `<strong>مدير قسم البرمجة والإعلام الرقمي :</strong><br>
+                  - الإشراف على قسم البرمجة والإعلام الرقمي ضمن فرع مجموعة كوين.<br>
+                  - إدارة تطوير الأنظمة الداخلية وصيانتها وأتمتتها، بما في ذلك دمج أنظمة CRM و ERP.<br>
+                  - الإشراف على حضور الشركة عبر وسائل التواصل الاجتماعي والحملات التسويقية الرقمية.<br>
+                  - تصميم المحتوى المرئي والمواد الترويجية والتنسيق مع الإدارة لتعزيز العلامة التجارية وزيادة التفاعل مع العملاء.`,
+                linkPath: "https://coin-market.store",
                 havePopup: false,
                 popup: {},
               },
@@ -1567,7 +1605,7 @@ $(function () {
                 type: "عرض الموقع",
                 src: "Masfufat - شركة تقنية",
                 title: "مطوّر واجهات أمامية",
-                date: "مارس 2024 - حتى الأن",
+                date: "مارس 2024 - أكتوبر 2025",
                 description: `<strong>مطوّر واجهات أمامية :</strong><br/>- طوّرت وحسّنت واجهات المستخدم لموقع masfufat.com باستخدام تقنيات حديثة مثل HTML، CSS، JavaScript، وإطارات العمل مثل Tailwind CSS و Vue.js.<br/>- تعاونت مع فرق التصميم والتطوير لتحسين تجربة المستخدم وتلبية المتطلبات.<br/>- ضمنت التوافق عبر المتصفحات والأجهزة المختلفة من خلال اختبارات دقيقة وتحسين الأداء.`,
                 linkPath: "https://masfufat.com",
                 havePopup: false,
@@ -1633,14 +1671,14 @@ $(function () {
             id: 2,
             data: [
               ["Email:", "alaaqutfa.work@gmail.com", "e"],
-              ["Whatsapp:", "+963986223268", "w"],
-              ["Office:", "+963986223268", "p"],
+              ["Whatsapp:", "+9647864034927", "w"],
+              ["Office:", "+9647864034927", "p"],
             ],
           },
         ],
       },
       Brand: ["img/brands/1.png", "img/brands/2.png"],
-      Copyright: ["https://wa.me/+963986223268", "علاء قطفة"],
+      Copyright: ["https://wa.me/+9647864034927", "علاء قطفة"],
       Menu: ["الصفحة الرئيسية", "المعرض", "التاريخ", "الأتصال"],
       Language: [
         ["EN", false, "en"],
